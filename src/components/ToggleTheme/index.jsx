@@ -15,7 +15,7 @@ export default function ToggleTheme () {
 
 	return (
 			<div className="h-14 rounded-full">
-				<MoonIcon className="text-light-100 block dark:hidden cursor-pointer h-14" onClick={toogle} />
+				<MoonIcon className="text-sun block dark:hidden cursor-pointer h-14" onClick={toogle} />
 				<SunIcon className="text-sun hidden dark:block cursor-pointer h-14" onClick={toogle} />
 			</div>
 		)

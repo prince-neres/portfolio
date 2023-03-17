@@ -7,10 +7,12 @@
 
 @layer base {
 	nav {
-		@apply shadow-lg flex items-center sm:items-start md:items-center bg-light-200 dark:bg-dark-200 h-auto rounded-xl m-5 justify-between;
+		@apply shadow-lg flex items-center sm:items-start md:items-center bg-light-100 dark:bg-dark-200 h-auto rounded-xl m-5 justify-between;
 	}
 }
 
 @layer components {
-
+	.contact {
+		@apply bg-sun px-3 dark:text-dark-200 py-2 m-2 flex items-center cursor-pointer rounded-full;
+	}
 }
