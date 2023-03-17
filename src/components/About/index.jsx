@@ -7,8 +7,8 @@ import { IoLogoWhatsapp } from "react-icons/io"
 const About = () => {
 	return (
 		<main className="h-auto bg-light-200 dark:bg-dark-200 mx-5 mb-5 rounded-xl">
-			<div className="items-center p-10 sm:flex-col sm:justify-center sm:text-center md:flex-row md:text-left lg:flex">
-				<img src={Me} className="rounded-full mb-5 w-72 h-72 mx-auto lg:m-0" />
+			<div className="items-center p-10 text-center sm:flex-col md:flex-row lg:text-left lg:flex">
+				<img src={Me} className="rounded-full mb-5 sm:w-72 sm:h-72 mx-auto lg:m-0" />
 				<div className='md:pl-10'>
 					<div className='pb-5'>
 						<h1 className='text-3xl font-bold'>Prince Neres</h1>
