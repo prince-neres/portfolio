@@ -14,13 +14,14 @@ module.exports = {
 			},
 			light: {
 				100: '#FFFFFF',
-				200: '#BDBDBD'
+				200: '#d3d3d3'
 			},
 			moon: "#F4F1C9",
 			sun: "#FDB813"
 		},
 		fontFamily: {
-        'inter': ['Inter', 'sans-serif']
+        'inter': ['Inter', 'sans-serif'],
+				'fira': ['Fira Code', 'sans-serif']
       },
 		}
   },

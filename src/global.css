@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Inter:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	nav {
+		@apply shadow-lg flex items-center sm:items-start md:items-center bg-light-200 dark:bg-dark-200 h-auto rounded-xl m-5 justify-between;
+	}
+}
+
+@layer components {
+
+}
