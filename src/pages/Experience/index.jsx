@@ -1,7 +1,8 @@
+import Maintenance from '../../components/Maintenance';
+
 const Experience = () => {
 	return (
-		<>
-		</>
+		<Maintenance />
 	)
 }
 
