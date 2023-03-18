@@ -17,7 +17,7 @@ const About = () => {
 				<img src={Me} className='rounded-full mb-5 sm:w-72 sm:h-72 mx-auto lg:m-0' />
 				<div className='md:pl-10'>
 					<div className='pb-5'>
-						<h1 className='text-3xl font-bold'>Prince Neres</h1>
+						<h1 className='text-3xl font-bold'>Olá! Meu nome é Prince</h1>
 						<i className='text-sun'>Desenvolvedor Web</i>
 					</div>
 					<p className='indent-8 text-justify'>
