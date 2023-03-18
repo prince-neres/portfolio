@@ -1,0 +1,44 @@
+[
+	{
+		"office": "Desenvolvedor full stack",
+		"type": "Tempo integral",
+		"company": "Autodoc",
+		"location": {
+			"city": "São Paulo",
+			"state": "SP",
+			"country": "Brasil"
+		},
+		"description": "Desenvolvimento e manutenção nos produtos digitais da Autodoc, utilizando-se da metodologia ágil KANBAN. Desenvolvimento de scripts para automação de operações nos sistemas.",
+		"skills": ["HTML5", "CSS3", "JavaScript", "React.Js", "Redux", "Python", "Flask", "SQL", "PostgreSQL", "MongoDB", "Docker", "Linux", "Git"],
+		"start_date": "06/13/2022",
+		"end_date": "11/18/2022"
+	},
+		{
+		"office": "Desenvolvedor full stack",
+		"type": "Estágio",
+		"company": "Presidência da República",
+		"location": {
+			"city": "Brasília",
+			"state": "DF",
+			"country": "Brasil"
+		},
+		"description": "Implementação e desenvolvimento de sistemas, suporte e manutenção nos sistemas Coordenação Geral de Soluções Tecnológicos (CGST) unidade da Casa Civil, utilizando-se da metodologia ágil SCRUM.",
+		"skills": ["HTML5", "SASS", "JavaScript", "React.Js", "AngularJS", "MobX", "Python", "Django", "SQL", "PostgreSQL", "Docker", "Linux", "Git"],
+		"start_date": "01/27/2022",
+		"end_date": "06/10/2022"
+	},
+		{
+		"office": "Suport técnico",
+		"type": "Estágio",
+		"company": "Prefeitura de Goianésia",
+		"location": {
+			"city": "Goianésia",
+			"state": "GO",
+			"country": "Brasil"
+		},
+		"description": "Responsável por dar suporte aos funcionários no quesito hardware, software e redes para computadores na Secretária Municipal de Educação de Goianésia e as instituições de ensino municipais da cidade.",
+		"skills": ["Windows", "Rede de computadores", "Hardware", "Software", "Montagem e manutenção", "Office 365"],
+		"start_date": "08/16/2022",
+		"end_date": "12/31/2022"
+	}
+]

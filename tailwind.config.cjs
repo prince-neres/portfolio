@@ -10,11 +10,11 @@ module.exports = {
 			colors: {
 			dark: {
 				100: '#757575',
-				200: '#212121'
+				200: '#323437'
 			},
 			light: {
-				100: '#FFFFFF',
-				200: '#d3d3d3'
+				100: '#ffffff',
+				200: '#d1d0c5'
 			},
 			moon: "#F4F1C9",
 			sun: "#FDB813"

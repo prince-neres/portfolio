@@ -18,11 +18,6 @@ export default function Navbar () {
           </Link>
         </div>
 				<div className="px-5 py-6">
-          <Link to="/skills" className={location.pathname === "/skills" ? "font-bold text-sun" : "hover:text-sun duration-200"}>
-            Habilidades
-          </Link>
-        </div>
-				<div className="px-5 py-6">
           <Link to="/experience" className={location.pathname === "/experience" ? "font-bold text-sun" : "hover:text-sun duration-200"}>
             Experiência
           </Link>
@@ -48,11 +43,6 @@ export default function Navbar () {
 					<div className="px-5 py-2 ">
 						<Link to="/" className={location.pathname === "/" ? "font-bold text-sun" : "hover:text-sun duration-200"}>
 							Início
-						</Link>
-					</div>
-					<div className="px-5 py-2">
-						<Link to="/skills" className={location.pathname === "/skills" ? "font-bold text-sun" : "hover:text-sun duration-200"}>
-							Habilidades
 						</Link>
 					</div>
 					<div className="px-5 py-2">

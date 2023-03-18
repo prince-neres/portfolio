@@ -7,7 +7,7 @@
 
 @layer base {
 	nav {
-		@apply shadow-lg flex items-center sm:items-start md:items-center bg-light-100 dark:bg-dark-200 h-auto rounded-xl m-5 justify-between;
+		@apply flex items-center sm:items-start md:items-center  h-auto rounded-xl m-5 justify-between;
 	}
 }
 

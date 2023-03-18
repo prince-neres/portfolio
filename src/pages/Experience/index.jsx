@@ -1,9 +1,9 @@
-import Maintenance from '../../components/Maintenance';
+import Xp from '../../components/Xp';
 
 const Experience = () => {
 	return (
-		<Maintenance />
+		<Xp />
 	)
-}
+};
 
 export default Experience;

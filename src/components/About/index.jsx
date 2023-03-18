@@ -5,10 +5,14 @@ import { RiInstagramFill } from 'react-icons/ri';
 import { IoLogoWhatsapp } from 'react-icons/io';
 
 const About = () => {
-	const mailto = 'mailto:prince84224960@gmail.com';
+	const linkWhatsapp = 'https://wa.me/5562984224960';
+	const linkMailto = 'mailto:prince84224960@gmail.com';
+	const linkLinkedin = 'https://www.linkedin.com/in/prince-neres';
+	const linkGithub = 'https://github.com/prince-neres';
+	const linkInstagram = 'https://www.instagram.com/prince.neres/';
 
 	return (
-		<main className='shadow-lg h-auto bg-light-100 dark:bg-dark-200 mx-5 mb-5 rounded-xl'>
+		<main className='h-auto mx-5 mb-5'>
 			<div className='items-center p-10 text-center sm:flex-col md:flex-row lg:text-left lg:flex'>
 				<img src={Me} className='rounded-full mb-5 sm:w-72 sm:h-72 mx-auto lg:m-0' />
 				<div className='md:pl-10'>
@@ -30,11 +34,11 @@ const About = () => {
 			</div>
 			<div className='w-full text-center'>
 				<ul className='w-full flex flex-wrap justify-center px-10 pb-10'>
-					<a href='https://wa.me/5562984224960' target='_blank' className='contact'><IoLogoWhatsapp className='mr-2' />(62) 98422-4960</a>
-					<a href={mailto} target='_blank' className='contact'><SiGmail className='mr-2' />prince84224960@gmail.com</a>
-					<a href='https://www.linkedin.com/in/prince-neres' target='_blank' className='contact'><FaLinkedin className='mr-2' />Prince Neres</a>
-					<a href='https://github.com/prince-neres' target='_blank' className='contact'><FaGithub className='mr-2' />prince-neres</a>
-					<a href='https://www.instagram.com/prince.neres/' target='_blank' className='contact'><RiInstagramFill className='mr-2' />prince.neres</a>
+					<a href={linkWhatsapp} target='_blank' className='contact'><IoLogoWhatsapp className='mr-2' />(62) 98422-4960</a>
+					<a href={linkMailto} target='_blank' className='contact'><SiGmail className='mr-2' />prince84224960@gmail.com</a>
+					<a href={linkLinkedin} target='_blank' className='contact'><FaLinkedin className='mr-2' />Prince Neres</a>
+					<a href={linkGithub} target='_blank' className='contact'><FaGithub className='mr-2' />prince-neres</a>
+					<a href={linkInstagram} target='_blank' className='contact'><RiInstagramFill className='mr-2' />prince.neres</a>
 				</ul>
 			</div>
 		</main>
