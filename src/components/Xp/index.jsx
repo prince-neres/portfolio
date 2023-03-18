@@ -28,7 +28,7 @@ const Xp = () => {
 			{XpJSON.map((xp, index) => (
 				<div key={index} className='px-10 py-4'>
 					<h3 className='font-bold text-xl text-sun'>{xp.office}</h3>
-					<h4>{`${xp.company} · ${xp.type}`}</h4>
+					<h4 className='font-bold'>{`${xp.company} · ${xp.type}`}</h4>
 					 <p><i>{formatLocation(xp.location)}</i></p>
 					<span>{`${formatDate(xp.start_date)} - ${formatDate(xp.end_date)} - ${monthsDiff(xp.start_date, xp.end_date)} meses`}</span>
 					<p className='indent-8 text-justify pt-2'>{xp.description}</p>
