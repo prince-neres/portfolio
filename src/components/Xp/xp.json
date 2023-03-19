@@ -8,7 +8,7 @@
 			"state": "SP",
 			"country": "Brasil"
 		},
-		"description": "Desenvolvimento e manutenção nos produtos digitais da Autodoc, utilizando-se da metodologia ágil KANBAN. Desenvolvimento de scripts para automação de operações nos sistemas.",
+		"description": "Desenvolvimento e manutenção nos produtos digitais da Autodoc EVA e CONAZ, utilizando-se da metodologia ágil KANBAN. Desenvolvimento de scripts para automação de operações nos sistemas.",
 		"skills": ["HTML5", "CSS3", "JavaScript", "React.Js", "Redux", "Python", "Flask", "SQL", "PostgreSQL", "MongoDB", "Docker", "Linux", "Git"],
 		"start_date": "06/13/2022",
 		"end_date": "11/18/2022"
@@ -22,7 +22,7 @@
 			"state": "DF",
 			"country": "Brasil"
 		},
-		"description": "Implementação e desenvolvimento de sistemas, suporte e manutenção nos sistemas Coordenação Geral de Soluções Tecnológicos (CGST) unidade da Casa Civil, utilizando-se da metodologia ágil SCRUM.",
+		"description": "Implementação e desenvolvimento de sistemas, suporte e manutenção nos sistemas GOVERNA e SINC da Coordenação Geral de Soluções Tecnológicos (CGST) unidade da Casa Civil, utilizando-se da metodologia ágil SCRUM.",
 		"skills": ["HTML5", "SASS", "JavaScript", "React.Js", "AngularJS", "MobX", "Python", "Django", "SQL", "PostgreSQL", "Docker", "Linux", "Git"],
 		"start_date": "01/27/2022",
 		"end_date": "06/10/2022"
