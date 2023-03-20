@@ -24,7 +24,7 @@ const Xp = () => {
 	};
 
 	return (
-		<div className='h-auto mx-5 mb-5 py-5 lg:px-56'>
+		<div className='h-auto p-5 lg:px-56'>
 			{XpJSON.map((xp, index) => (
 				<div key={index} className='px-10 py-4'>
 					<h3 className='font-bold text-xl text-sun'>{xp.office}</h3>

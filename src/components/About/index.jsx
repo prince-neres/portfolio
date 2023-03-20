@@ -1,3 +1,4 @@
+import aboutJson from './about.json';
 import Me from '../../assets/me.png';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
@@ -5,40 +6,39 @@ import { RiInstagramFill } from 'react-icons/ri';
 import { IoLogoWhatsapp } from 'react-icons/io';
 
 const About = () => {
-	const linkWhatsapp = 'https://wa.me/5562984224960';
-	const linkMailto = 'mailto:prince84224960@gmail.com';
-	const linkLinkedin = 'https://www.linkedin.com/in/prince-neres';
-	const linkGithub = 'https://github.com/prince-neres';
-	const linkInstagram = 'https://www.instagram.com/prince.neres/';
+	const icons = [
+		<IoLogoWhatsapp className='mr-2' />,
+		<SiGmail className='mr-2' />,
+		<FaLinkedin className='mr-2' />,
+		<FaGithub className='mr-2'/>,
+		<RiInstagramFill className='mr-2' />
+	]
 
 	return (
 		<main className='h-auto mx-5 mb-5'>
-			<div className='items-center p-10 text-center sm:flex-col md:flex-row lg:px-72 lg:text-left lg:flex'>
+			<div className='items-center p-5 text-center sm:flex-col md:flex-row lg:px-32 lg:text-left lg:flex'>
 				<img src={Me} className='rounded-full mb-5 sm:w-72 sm:h-72 mx-auto lg:m-0' />
 				<div className='md:pl-10'>
 					<div className='pb-5'>
-						<h1 className='text-3xl font-bold'>Olá! Meu nome é Prince</h1>
-						<i className='text-sun'>Desenvolvedor Web</i>
+						<h1 className='text-3xl font-bold'>{aboutJson.title}</h1>
+						<i className='text-sun'>{aboutJson.office}</i>
 					</div>
-					<p className='indent-8 text-justify'>
-						Tenho 21 anos, ingressei na área de tecnologia em 2021, inicialmente atuando na área de suporte técnico,
-						prestando manutenção, instalação e configuração de hardware e software, além de auxiliar os usuários 
-						nas mais diversas dificuldades.
-					</p>
-					<p className='indent-8 text-justify'>
-						A partir de 2022, comecei a trabalhar com programação, desenvolvendo e mantendo sistemas com as linguagens de programação e 
-						tecnologias: <span className='font-fira text-sun'>JavaScript, Python, React.Js, Django, Flask, Git, PostgreSQL</span> e <span className='font-fira text-sun'>MongoDB</span>, sempre utilizando de 
-						metodologias ágeis como <span className='font-fira text-sun'>SCRUM</span> e <span className='font-fira text-sun'>KANBAN</span> para a entrega mais eficiente das demandas.
-					</p>
+					{
+						aboutJson.paragraphs.map((paragraph, index) =>
+							<p className='indent-8 text-justify' key={index}>
+								{paragraph}
+							</p>
+						)
+					}
 				</div>
 			</div>
 			<div className='w-full text-center'>
 				<ul className='w-full flex flex-wrap justify-center px-10 pb-10'>
-					<a href={linkWhatsapp} target='_blank' className='contact'><IoLogoWhatsapp className='mr-2' />(62) 98422-4960</a>
-					<a href={linkMailto} target='_blank' className='contact'><SiGmail className='mr-2' />prince84224960@gmail.com</a>
-					<a href={linkLinkedin} target='_blank' className='contact'><FaLinkedin className='mr-2' />Prince Neres</a>
-					<a href={linkGithub} target='_blank' className='contact'><FaGithub className='mr-2' />prince-neres</a>
-					<a href={linkInstagram} target='_blank' className='contact'><RiInstagramFill className='mr-2' />prince.neres</a>
+					{
+						aboutJson.contacts.map((contact, index) => 
+								<a key={index} href={contact.url} target='_blank' className='contact'>{icons[index]}{contact.name}</a>
+						)
+					}
 				</ul>
 			</div>
 		</main>
