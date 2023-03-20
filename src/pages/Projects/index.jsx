@@ -4,6 +4,6 @@ const Projects = () => {
 	return (
 		<Maintenance />
 	)
-}
+};
 
 export default Projects;

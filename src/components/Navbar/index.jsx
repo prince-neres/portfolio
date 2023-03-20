@@ -7,7 +7,7 @@ export default function Navbar () {
 	const mobile_menu = () => {
 		const menu = document.querySelector('.mobile-menu');
 		menu.classList.toggle('hidden');
-	}
+	};
 
   return (
     <nav>

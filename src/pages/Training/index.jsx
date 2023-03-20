@@ -4,6 +4,6 @@ const Training = () => {
 	return (
 		<Education />
 	)
-}
+};
 
 export default Training;

@@ -7,6 +7,6 @@ const Mintenance = () => {
 			<p className='text-3xl text-sun font-bold'>Área ainda em desenvolvimento...</p>
 		</div>
 	)
-}
+};
 
 export default Mintenance;
