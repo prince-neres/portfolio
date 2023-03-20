@@ -1,0 +1,47 @@
+[
+	{
+		"name": "Sistema de notas",
+		"banner": "https://github.com/prince-neres/notes-app/raw/master/frontend/public/notes_app.png",
+		"url": "",
+		"repo": "https://github.com/prince-neres/notes-app",
+		"tecnologies": [
+			"React, Redux, Axios, Router DOM, Flask, JWT, SQL Alchemy, PostgreSQL"
+		]
+	},
+	{
+		"name": "Drag and Drop",
+		"banner": "https://raw.githubusercontent.com/prince-neres/drag-and-drop-game/master/static/imgs/previews/temas.png",
+		"url": "https",
+		"repo": "https://github.com/prince-neres/drag-and-drop-game",
+		"tecnologies": [
+			"jQuery, Bootstrap, Flask, MongoD"
+		]
+	},	
+	{
+		"name": "Weather App",
+		"banner": "https://github.com/prince-neres/weather-app/raw/master/public/previews/city-weather.png",
+		"url": "https://weather-app-prince-neres.netlify.app/",
+		"repo": "https://github.com/prince-neres/weather-app",
+		"tecnologies": [
+			"React.js, Styled Components, Open Weather API"
+		]
+	},
+	{
+		"name": "Gaming E-commerce Interface",
+		"banner": "https://github.com/prince-neres/gaming-e-commerce-interface/raw/master/src/assets/previews/products.png",
+		"url": "https://gaming-ecommerce-interface.netlify.app/",
+		"repo": "https://github.com/prince-neres/gaming-e-commerce-interface",
+		"tecnologies": [
+			"React.js, SASS, Router DOM, Redux Toolkit"
+		]
+	},
+	{
+		"name": "Task Counter",
+		"banner": "https://github.com/prince-neres/task-counter/raw/master/src/assets/previews/task-counter.png",
+		"url": "https://poetic-sopapillas-bba383.netlify.app/",
+		"repo": "https://github.com/prince-neres/task-counter",
+		"tecnologies": [
+			"React, Typescript, SASS"
+		]
+	}
+]

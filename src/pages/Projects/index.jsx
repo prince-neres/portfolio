@@ -1,8 +1,8 @@
-import Maintenance from '../../components/Maintenance';
+import Apps from '../../components/Apps';
 
 const Projects = () => {
 	return (
-		<Maintenance />
+		<Apps />
 	)
 };
 
