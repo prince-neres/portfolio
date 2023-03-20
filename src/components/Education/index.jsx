@@ -3,7 +3,7 @@ import educationJson from './education.json';
 
 const Education = () => {
 	return (
-		<div className='h-auto p-5 lg:px-56'>
+		<div className='h-auto p-3 lg:px-56'>
 			{educationJson.academic.map((education, index) => (
 				<div key={index} className='px-10 py-4'>
 					<h3 className='font-bold text-xl text-sun'>{education.institute}</h3>
@@ -23,6 +23,13 @@ const Education = () => {
 					</div>
 				</div>
 			))}
+			<div className='text-center py-10'>
+				<a href={educationJson.certifications.url} target='_blank'>
+	        <button className='font-bold text-dark-200 dark:text-light-100 outline outline-sun p-5 rounded-full hover:p-6 hover:bg-sun hover:dark:text-dark-200 duration-300'>
+						{educationJson.certifications.title}
+					</button>
+				</a>
+			</div>
 		</div>
 	)
 };

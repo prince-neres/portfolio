@@ -15,7 +15,7 @@ const About = () => {
 	]
 
 	return (
-		<main className='h-auto mx-5 mb-5'>
+		<main className='h-auto p-3 lg:px-56'>
 			<div className='items-center p-5 text-center sm:flex-col md:flex-row lg:px-32 lg:text-left lg:flex'>
 				<img src={Me} className='rounded-full mb-5 sm:w-72 sm:h-72 mx-auto lg:m-0' />
 				<div className='md:pl-10'>

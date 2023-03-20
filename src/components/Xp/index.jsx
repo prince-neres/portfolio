@@ -3,7 +3,7 @@ import XpJSON from './xp.json';
 
 const Xp = () => {
 	return (
-		<div className='h-auto p-5 lg:px-56'>
+		<div className='h-auto p-3 lg:px-72'>
 			{XpJSON.map((xp, index) => (
 				<div key={index} className='px-10 py-4'>
 					<h3 className='font-bold text-xl text-sun'>{xp.office}</h3>
