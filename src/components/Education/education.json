@@ -1,0 +1,23 @@
+{
+	"academic":[
+		{
+			"institute":"IFB - Instituto Federal de Educação, Ciência e Tecnologia de Brasília - Campus Brasília",
+				"location": {
+				"city": "Brasília",
+				"state": "DF",
+				"country": "Brasil"
+			},
+			"course": "Tecnologia em Sistemas para Internet",
+			"description": "O curso tem como objetivo geral formar profissionais especializados, conscientes, éticos e com análise crítica e reflexiva, que atuem no desenvolvimento de programas, de interfaces e aplicativos, do comércio e do marketing eletrônicos, além de sítios e portais para Internet e Intranet. Este profissional gerencia projetos de sistemas, inclusive com acesso a banco de dados, desenvolvendo projetos de aplicações para a rede mundial de computadores e íntegra mídias nos sítios da Internet.",
+			"type": "Curso superior de tecnologia",
+			"start_date": "02/17/2020",
+			"end_date": "01/24/2023",
+			"teachings": [
+				"Rede de Computadores", "Sistemas Operacionais", "Hardware", "Software", "Programação", "Banco de Dados", "Empreendedorismo", "Engenharia de Software", "Gestão de TI", "Ética", "Desenvolvimento Web", "Ciência de Dados", "Internet das Coisas", "Comércio Eletrônico"
+			]
+		}
+	],
+	"certifications": [
+
+	]
+}
