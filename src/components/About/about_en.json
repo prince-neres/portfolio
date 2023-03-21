@@ -1,0 +1,35 @@
+{
+	"title": "Hello! My name is Prince",
+	"office": "Web Developer",
+	"paragraphs": [
+		"I'm 21 years old, I joined the technology area in 2021, initially working in the technical support area, providing maintenance, installation and configuration of hardware and software, in addition to helping users with the most diverse difficulties.",
+		"From 2022, I started working with programming, developing and maintaining systems with programming languages and technologies: JavaScript, Python, React.Js, Django, Flask, Git, PostgreSQL and MongoDB, always using agile methodologies such as SCRUM and KANBAN for the most efficient delivery of demands."
+	],
+	"contacts": [
+		{
+			"name": "+55 (62) 98422-4960",
+			"title": "+55 (62) 98422-4960",
+			"url": "https://wa.me/5562984224960"
+		},
+		{
+			"name": "prince84224960@gmail.com",
+			"title": "prince84224960@gmail.com",
+			"url": "mailto:prince84224960@gmail.com"
+		},
+		{
+			"name": "LinkedIn",
+			"title": "Prince Neres",
+			"url": "https://www.linkedin.com/in/prince-neres"
+		},
+		{
+			"name": "GitHub",
+			"title": "prince-neres",
+			"url": "https://github.com/prince-neres"
+		},
+		{
+			"name": "Instagram",
+			"title": "prince.neres",
+			"url": "https://instagram.com/prince.neres"
+		}
+	]
+}
