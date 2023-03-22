@@ -8,7 +8,7 @@
 			"state": "SP",
 			"country": "Brazil"
 		},
-		"description": "Development and maintenance of Autodoc and CONAZ digital products, using the agile KANBAN methodology. Development of scripts for automation of operations in systems.",
+		"description": "Development and maintenance of Autodoc EVA and CONAZ digital products, using the agile KANBAN methodology. Development of scripts for automation of operations in systems.",
 		"skills": ["HTML5", "CSS3", "JavaScript", "React.Js", "Redux", "Python", "Flask", "SQL", "PostgreSQL", "MongoDB", "Docker", "Linux", "Git"],
 		"start_date": "06/13/2022",
 		"end_date": "11/18/2022"
@@ -38,7 +38,7 @@
 		},
 		"description": "Responsible for supporting employees in terms of hardware, software and computer networks at the Municipal Secretary of Education of Goianésia and the city's municipal educational institutions.",
 		"skills": ["Windows", "Computer network", "Hardware", "Software", "Assembly", "Maintenance", "Office 365"],
-		"start_date": "08/16/2022",
-		"end_date": "12/31/2022"
+		"start_date": "08/16/2021",
+		"end_date": "12/31/2021"
 	}
 ]
