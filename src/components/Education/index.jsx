@@ -1,10 +1,20 @@
 import { formatDate, formatLocation } from '../../commons/utils.js';
-import educationJson from './education.json';
+import education_pt from './education_pt.json';
+import education_en from './education_en.json';
+import { useContext, useEffect, useState } from 'react';
+import { Context } from '../../Context';
 
 const Education = () => {
+	const [language] = useContext(Context);
+	const [content, setContent] = useState(language === 'pt-BR' ? education_pt : education_en)
+
+	useEffect(() => {
+		setContent(language === 'pt-BR' ? education_pt : education_en)
+	}, [language]);
+
 	return (
 		<div className='h-auto p-3 lg:px-56'>
-			{educationJson.academic.map((education, index) => (
+			{content.academic.map((education, index) => (
 				<div key={index} className='px-10 py-4'>
 					<h3 className='font-bold text-xl text-sun'>{education.institute}</h3>
 					<h4 className='font-bold'>{`${education.course} · ${education.type}`}</h4>
@@ -24,9 +34,9 @@ const Education = () => {
 				</div>
 			))}
 			<div className='text-center py-10'>
-				<a href={educationJson.certifications.url} target='_blank'>
+				<a href={content.certifications.url} target='_blank'>
 	        <button className='font-bold text-dark-200 dark:text-light-100 outline outline-sun p-5 rounded-full hover:p-6 hover:bg-sun hover:dark:text-dark-200 duration-300'>
-						{educationJson.certifications.title}
+						{content.certifications.title}
 					</button>
 				</a>
 			</div>

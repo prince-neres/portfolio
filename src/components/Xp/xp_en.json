@@ -1,0 +1,44 @@
+[
+	{
+		"office": "Full Stack Developer",
+		"type": "Full-time",
+		"company": "Autodoc",
+		"location": {
+			"city": "São Paulo",
+			"state": "SP",
+			"country": "Brazil"
+		},
+		"description": "Development and maintenance of Autodoc and CONAZ digital products, using the agile KANBAN methodology. Development of scripts for automation of operations in systems.",
+		"skills": ["HTML5", "CSS3", "JavaScript", "React.Js", "Redux", "Python", "Flask", "SQL", "PostgreSQL", "MongoDB", "Docker", "Linux", "Git"],
+		"start_date": "06/13/2022",
+		"end_date": "11/18/2022"
+	},
+		{
+		"office": "Full Stack Developer",
+		"type": "Internship",
+		"company": "Presidency of the Republic",
+		"location": {
+			"city": "Brasilia",
+			"state": "DF",
+			"country": "Brazil"
+		},
+		"description": "Implementation and development of systems, support and maintenance in the GOVERNA and SINC systems of the General Coordination of Technological Solutions (CGST) unit of the Civil House, using the SCRUM agile methodology.",
+		"skills": ["HTML5", "SASS", "JavaScript", "React.Js", "AngularJS", "MobX", "Python", "Django", "SQL", "PostgreSQL", "Docker", "Linux", "Git"],
+		"start_date": "01/27/2022",
+		"end_date": "06/10/2022"
+	},
+		{
+		"office": "Technical support",
+		"type": "Internship",
+		"company": "City Hall of Goianésia",
+		"location": {
+			"city": "Goianesia",
+			"state": "GO",
+			"country": "Brazil"
+		},
+		"description": "Responsible for supporting employees in terms of hardware, software and computer networks at the Municipal Secretary of Education of Goianésia and the city's municipal educational institutions.",
+		"skills": ["Windows", "Computer network", "Hardware", "Software", "Assembly", "Maintenance", "Office 365"],
+		"start_date": "08/16/2022",
+		"end_date": "12/31/2022"
+	}
+]

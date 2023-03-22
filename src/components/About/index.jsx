@@ -8,9 +8,9 @@ import { IoLogoWhatsapp } from 'react-icons/io';
 import { Context } from '../../Context';
 import { useState, useContext, useEffect } from 'react';
 
-const About = ({languagetest}) => {
+const About = () => {
 	const [language] = useContext(Context);
-	const [content, setContent] = useState(language === 'en-US' ? about_en : about_pt);
+	const [content, setContent] = useState(language === 'pt-BR' ? about_pt : about_en);
 
 	const icons = [
 		<IoLogoWhatsapp className='mr-2' />,
@@ -21,8 +21,7 @@ const About = ({languagetest}) => {
 	]
 
 	useEffect(() => {
-		setContent(language == 'pt-BR' ? about_pt : about_en )
-		console.log(languagetest)
+		setContent(language === 'pt-BR' ? about_pt : about_en )
 	}, [language])
 
 	return (

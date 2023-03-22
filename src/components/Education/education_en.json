@@ -1,0 +1,24 @@
+{
+	"academic":[
+		{
+			"institute":"IFB - Federal Institute of Education, Science and Technology of Brasília - Campus Brasília",
+				"location": {
+				"city": "Brasilia",
+				"state": "DF",
+				"country": "Brazil"
+			},
+			"course": "Technology in Internet Systems",
+			"description": "The general objective of the course is to train specialized, conscientious, ethical professionals with critical and reflective analysis, who work in the development of programs, interfaces and applications, electronic commerce and marketing, as well as websites and portals for the Internet and Intranet. This professional manages systems projects, including database access, developing application projects for the World Wide Web and complete media on Internet sites.",
+			"type": "higher technology course",
+			"start_date": "02/17/2020",
+			"end_date": "01/24/2023",
+			"teachings": [
+				"Computer Network", "Operating Systems", "Hardware", "Software", "Programming", "Database", "Entrepreneurship", "Software Engineering", "IT Management", "Ethics", " Web Development", "Data Science", "Internet of Things", "E-Commerce"
+			]
+		}
+	],
+	"certifications": {
+		"title": "Certificates and Courses",
+		"url": "https://drive.google.com/drive/u/0/folders/1tuMaZaOUrfzOY2fpLYHgoJfjpwWpTyaN"
+	} 
+}
