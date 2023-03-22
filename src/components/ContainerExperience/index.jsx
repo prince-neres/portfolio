@@ -20,7 +20,7 @@ const ContainerExperience = () => {
 					<h3 className='font-bold text-xl text-sun'>{xp.office}</h3>
 					<h4 className='font-bold'>{`${xp.company} · ${xp.type}`}</h4>
 					 <p><i>{formatLocation(xp.location)}</i></p>
-					<span>{`${formatDate(xp.start_date)} - ${formatDate(xp.end_date)} - ${monthsDiff(xp.start_date, xp.end_date)} meses`}</span>
+					<span>{`${formatDate(xp.start_date, language)} - ${formatDate(xp.end_date, language)} - ${monthsDiff(xp.start_date, xp.end_date, language)}`}</span>
 					<p className='indent-8 text-justify pt-2'>{xp.description}</p>
 					<div className='flex flex-row flex-wrap pt-2 items-center'>
 						<strong>{language === 'pt-BR' ? 'Competências' : 'Skills'}:</strong>
