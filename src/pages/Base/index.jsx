@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Outlet } from 'react-router';
+import { Context } from '../../Context';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
-import { Context } from '../../Context';
 
 const Base = () => {
 	const [language, setLanguage] = useState(localStorage.getItem('language') || 'pt-BR')

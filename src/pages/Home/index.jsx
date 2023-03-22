@@ -1,8 +1,8 @@
-import About from '../../components/About';
+import ContainerHome from '../../components/ContainerHome';
 
 const Home = () => {
 	return (
-		<About />
+		<ContainerHome />
 	)
 };
 

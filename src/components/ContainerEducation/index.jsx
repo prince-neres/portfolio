@@ -4,12 +4,13 @@ import education_en from './education_en.json';
 import { useContext, useEffect, useState } from 'react';
 import { Context } from '../../Context';
 
-const Education = () => {
+const ContainerEducation = () => {
 	const [language] = useContext(Context);
-	const [content, setContent] = useState(language === 'pt-BR' ? education_pt : education_en)
+	const defineContent = language === 'pt-BR' ? education_pt : education_en;
+	const [content, setContent] = useState(defineContent);
 
 	useEffect(() => {
-		setContent(language === 'pt-BR' ? education_pt : education_en)
+		setContent(defineContent);
 	}, [language]);
 
 	return (
@@ -22,7 +23,7 @@ const Education = () => {
 					<span>{`${formatDate(education.start_date)} - ${formatDate(education.end_date)}`}</span>
 					<p className='indent-8 text-justify pt-2'>{education.description}</p>
 					<div className='flex flex-row flex-wrap pt-2 items-center'>
-						<strong>Competências: </strong>
+						<strong>{language === 'pt-BR' ? 'Competências' : 'Skills'}:</strong>
 						{education.teachings.map((teaching, index) =>
 							<div key={index} className='my-3'>
 								<span className='p-2 bg-sun rounded-full text-dark-200 font-fira text-base mx-2'>
@@ -44,4 +45,4 @@ const Education = () => {
 	)
 };
 
-export default Education;
+export default ContainerEducation;

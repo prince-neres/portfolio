@@ -1,8 +1,8 @@
-import Apps from '../../components/Apps';
+import ContainerProjects from '../../components/ContainerProjects';
 
 const Projects = () => {
 	return (
-		<Apps />
+		<ContainerProjects />
 	)
 };
 

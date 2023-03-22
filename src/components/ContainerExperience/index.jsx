@@ -4,14 +4,14 @@ import { Context } from '../../Context.js';
 import xp_pt from './xp_pt.json';
 import xp_en from './xp_en.json';
 
-const Xp = () => {
+const ContainerExperience = () => {
 	const [language] = useContext(Context);
 	const defineContent = language === 'pt-BR' ? xp_pt : xp_en; 
 	const [content, setContent] = useState(defineContent);
 
 	useEffect(() => {
-		setContent(defineContent)
-	}, [language])
+		setContent(defineContent);
+	}, [language]);
 
 	return (
 		<div className='h-auto p-3 lg:px-72'>
@@ -23,7 +23,7 @@ const Xp = () => {
 					<span>{`${formatDate(xp.start_date)} - ${formatDate(xp.end_date)} - ${monthsDiff(xp.start_date, xp.end_date)} meses`}</span>
 					<p className='indent-8 text-justify pt-2'>{xp.description}</p>
 					<div className='flex flex-row flex-wrap pt-2 items-center'>
-						<strong>{language === 'pt-BR' ? 'Competências' : 'Skills'}: </strong>
+						<strong>{language === 'pt-BR' ? 'Competências' : 'Skills'}:</strong>
 						{xp.skills.map((skill, index) =>
 							<div key={index} className='my-3'>
 								<span className='p-2 bg-sun rounded-full text-dark-200 font-fira text-base mx-2'>
@@ -38,4 +38,4 @@ const Xp = () => {
 	)
 };
 
-export default Xp;
+export default ContainerExperience;

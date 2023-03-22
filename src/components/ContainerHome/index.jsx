@@ -1,16 +1,17 @@
-import about_pt from './about_pt.json';
-import about_en from './about_en.json';
-import Me from '../../assets/me.png';
+import { useState, useContext, useEffect } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import { RiInstagramFill } from 'react-icons/ri';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { Context } from '../../Context';
-import { useState, useContext, useEffect } from 'react';
+import about_pt from './about_pt.json';
+import about_en from './about_en.json';
+import Me from '../../assets/me.png';
 
-const About = () => {
+const ContainerHome = () => {
 	const [language] = useContext(Context);
-	const [content, setContent] = useState(language === 'pt-BR' ? about_pt : about_en);
+	const defineContent = language === 'pt-BR' ? about_pt : about_en;
+	const [content, setContent] = useState(defineContent);
 
 	const icons = [
 		<IoLogoWhatsapp className='mr-2' />,
@@ -18,11 +19,11 @@ const About = () => {
 		<FaLinkedin className='mr-2' />,
 		<FaGithub className='mr-2'/>,
 		<RiInstagramFill className='mr-2' />
-	]
+	];
 
 	useEffect(() => {
-		setContent(language === 'pt-BR' ? about_pt : about_en )
-	}, [language])
+		setContent(defineContent);
+	}, [language]);
 
 	return (
 		<main className='h-auto p-3 lg:px-56'>
@@ -53,6 +54,6 @@ const About = () => {
 			</div>
 		</main>
 	)
-}
+};
 
-export default About;
+export default ContainerHome;
