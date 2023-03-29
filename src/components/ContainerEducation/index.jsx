@@ -20,7 +20,7 @@ const ContainerEducation = () => {
 					<h3 className='font-bold text-xl text-sun'>{education.institute}</h3>
 					<h4 className='font-bold'>{`${education.course} · ${education.type}`}</h4>
 					 <p><i>{formatLocation(education.location)}</i></p>
-					<span>{`${formatDate(education.start_date)} - ${formatDate(education.end_date)}`}</span>
+					<span>{`${formatDate(education.start_date, language)} - ${formatDate(education.end_date, language)}`}</span>
 					<p className='indent-8 text-justify pt-2'>{education.description}</p>
 					<div className='flex flex-row flex-wrap pt-2 items-center'>
 						<strong>{language === 'pt-BR' ? 'Competências' : 'Skills'}:</strong>

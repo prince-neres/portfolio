@@ -9,7 +9,7 @@ const MobileMenu = ({location, content}) => {
 
 	return (
 		<>
-			<div className='block md:hidden items-center p-5' onClick={mobile_menu}>
+			<div className='block md:hidden items-center pl-5' onClick={mobile_menu}>
 				<button className='outline-none mobile-menu-button'>
 					<Bars3Icon className='h-10' />
 				</button>
