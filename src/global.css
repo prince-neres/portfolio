@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Inter:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Inter:wght@500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-	nav {
-		@apply flex items-center sm:items-start md:items-center  h-auto rounded-xl m-5 justify-between;
-	}
+  nav {
+    @apply flex items-center sm:items-start md:items-center  h-auto rounded-xl m-5 justify-between;
+  }
 }
 
 @layer components {
-	.contact {
-		@apply bg-sun px-3 dark:text-dark-200 py-2 m-2 flex items-center cursor-pointer rounded-full hover:bg-yellow-300 duration-200;
-	}
+  .contact {
+    @apply bg-sun px-3 dark:text-dark-200 py-2 m-2 flex items-center cursor-pointer rounded-full hover:bg-yellow-300 duration-200;
+  }
 }
