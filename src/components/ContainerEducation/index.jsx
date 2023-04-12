@@ -3,6 +3,7 @@ import education_pt from "./education_pt.json";
 import education_en from "./education_en.json";
 import { useContext, useEffect, useState } from "react";
 import { Context } from "../../Context";
+import CertificatesButton from "./CertificatesButton/index.jsx";
 
 const ContainerEducation = () => {
   const [language] = useContext(Context);
@@ -14,9 +15,9 @@ const ContainerEducation = () => {
   }, [language]);
 
   return (
-    <div className="h-auto p-3 lg:px-56">
+    <div className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96">
       {content.academic.map((education, index) => (
-        <div key={index} className="px-10 py-4">
+        <div key={index} className="pb-4">
           <h3 className="font-bold text-xl text-sun">{education.institute}</h3>
           <h4 className="font-bold">{`${education.course} · ${education.type}`}</h4>
           <p>
@@ -27,24 +28,13 @@ const ContainerEducation = () => {
             language
           )}`}</span>
           <p className="indent-8 text-justify pt-2">{education.description}</p>
-          <div className="flex flex-row flex-wrap pt-2 items-center">
-            <strong>{language === "pt-BR" ? "Competências" : "Skills"}:</strong>
-            {education.teachings.map((teaching, index) => (
-              <div key={index} className="my-3">
-                <span className="p-2 text-sm bg-sun rounded-full text-dark-200 font-fira mx-2">
-                  {`${teaching}`}
-                </span>
-              </div>
-            ))}
-          </div>
         </div>
       ))}
       <div className="text-center py-10">
-        <a href={content.certifications.url} target="_blank">
-          <button className="font-bold text-dark-200 dark:text-light-100 outline outline-sun p-5 rounded-full hover:p-6 hover:bg-sun hover:dark:text-dark-200 duration-300">
-            {content.certifications.title}
-          </button>
-        </a>
+        <CertificatesButton
+          url={content.certifications.url}
+          title={content.certifications.title}
+        />
       </div>
     </div>
   );

@@ -1,9 +1,7 @@
-import ContainerProjects from '../../components/ContainerProjects';
+import ContainerProjects from "../../components/ContainerProjects";
 
 const Projects = () => {
-	return (
-		<ContainerProjects />
-	)
+  return <ContainerProjects />;
 };
 
 export default Projects;

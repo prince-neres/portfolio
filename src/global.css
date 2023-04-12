@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Inter:wght@500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,12 +6,28 @@
 
 @layer base {
   nav {
-    @apply flex items-center sm:items-start md:items-center  h-auto rounded-xl m-5 justify-between;
+    @apply flex items-center md:items-center rounded-xl justify-between p-5 xl:px-56 2xl:px-96;
   }
 }
 
 @layer components {
   .contact {
-    @apply bg-sun px-3 dark:text-dark-200 py-2 m-2 flex items-center cursor-pointer rounded-full hover:bg-yellow-300 duration-200;
+    @apply bg-sun px-3 py-2 dark:text-dark-200 m-2 flex items-center cursor-pointer rounded-full hover:bg-yellow-300 duration-200;
+  }
+
+  .nav-link {
+    @apply hover:text-sun duration-200 flex;
+  }
+
+  .nav-link-active {
+    @apply font-bold text-sun flex;
+  }
+
+  .nav-icon {
+    @apply h-6 w-6 mr-2;
+  }
+
+  .tag {
+    @apply text-sm font-semibold p-2 rounded-full text-dark-200 bg-sun uppercase m-1;
   }
 }

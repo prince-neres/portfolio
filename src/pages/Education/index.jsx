@@ -1,9 +1,7 @@
-import ContainerEducation from '../../components/ContainerEducation';
+import ContainerEducation from "../../components/ContainerEducation";
 
 const Education = () => {
-	return (
-		<ContainerEducation />
-	)
+  return <ContainerEducation />;
 };
 
 export default Education;

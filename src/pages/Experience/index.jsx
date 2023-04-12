@@ -1,9 +1,7 @@
-import ContainerExperience from '../../components/ContainerExperience';
+import ContainerExperience from "../../components/ContainerExperience";
 
 const Experience = () => {
-	return (
-		<ContainerExperience />
-	)
+  return <ContainerExperience />;
 };
 
 export default Experience;
