@@ -38,12 +38,14 @@ const ContainerProjects = () => {
                 className="pb-3 hidden aspect-video group-hover:block	"
               />
             </div>
-            <h3 className="font-bold text-sun">{project.name}</h3>
+            <h3 className="font-bold text-blue_ dark:text-yellow_">
+              {project.name}
+            </h3>
             {project.url ? (
               <a
                 href={project.url}
                 target="_blank"
-                className="hover:bg-yellow-300 dark:text-dark-200 duration-100 flex justify-center items-center p-2 bg-sun my-2 rounded"
+                className="project-link-button"
               >
                 <FaLink className=" mr-2" />
                 <i>{content.titles.link}</i>
@@ -53,7 +55,7 @@ const ContainerProjects = () => {
               <a
                 href={project.repo}
                 target="_blank"
-                className="hover:bg-yellow-300 dark:text-dark-200 duration-100 flex justify-center items-center p-2 bg-sun my-2 rounded"
+                className="project-link-button"
               >
                 <FaGithub className=" mr-2" />
                 <i>{content.titles.repo}</i>

@@ -12,22 +12,34 @@
 
 @layer components {
   .contact {
-    @apply bg-sun px-3 py-2 dark:text-dark-200 m-2 flex items-center cursor-pointer rounded-full hover:bg-yellow-300 duration-200;
+    @apply px-3 py-2 m-2 font-bold flex items-center cursor-pointer rounded duration-500 text-white;
   }
 
   .nav-link {
-    @apply hover:text-sun duration-200 flex;
+    @apply hover:text-blue_ dark:hover:text-yellow_ duration-300 flex;
   }
 
   .nav-link-active {
-    @apply font-bold text-sun flex;
+    @apply font-bold text-blue_ dark:text-yellow_ bg-neutral-200 dark:bg-gray-700 w-full sm:w-auto rounded;
   }
 
   .nav-icon {
     @apply h-6 w-6 mr-2;
   }
 
+  .is-pt {
+    @apply bg-light-text text-light-bg dark:bg-dark-bg dark:text-dark-text;
+  }
+
+  .is-en {
+    @apply bg-light-bg text-light-text dark:bg-dark-text dark:text-dark-bg;
+  }
+
   .tag {
-    @apply text-sm font-semibold p-2 rounded-full text-dark-200 bg-sun uppercase m-1;
+    @apply text-sm font-semibold p-2 rounded-full uppercase m-1 bg-purple_ text-white;
+  }
+
+  .project-link-button {
+    @apply bg-purple_ hover:bg-purple-500 text-white duration-200 flex justify-center items-center p-2 my-2 rounded;
   }
 }

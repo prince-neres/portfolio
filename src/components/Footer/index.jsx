@@ -11,7 +11,7 @@ const Footer = () => {
         <a
           href="https://prince-neres.space"
           target="_blank"
-          className="hover:text-sun duration-200"
+          className="hover:text-blue_ dark:hover:text-yellow_ duration-200"
         >
           prince-neres.space.{" "}
         </a>

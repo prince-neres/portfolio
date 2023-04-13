@@ -17,7 +17,9 @@ const ContainerExperience = () => {
     <div className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96">
       {content.map((xp, index) => (
         <div key={index} className="pb-8">
-          <h3 className="font-bold text-xl text-sun">{xp.office}</h3>
+          <h3 className="font-bold text-xl text-blue_ dark:text-yellow_">
+            {xp.office}
+          </h3>
           <h4 className="font-bold">{`${xp.company} · ${xp.type}`}</h4>
           <p>
             <i>{formatLocation(xp.location)}</i>

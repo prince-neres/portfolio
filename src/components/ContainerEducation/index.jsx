@@ -18,8 +18,10 @@ const ContainerEducation = () => {
     <div className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96">
       {content.academic.map((education, index) => (
         <div key={index} className="pb-4">
-          <h3 className="font-bold text-xl text-sun">{education.institute}</h3>
-          <h4 className="font-bold">{`${education.course} · ${education.type}`}</h4>
+          <h3 className="font-bold text-xl text-blue_ dark:text-yellow_">
+            {education.institute}
+          </h3>
+          <h4 className="font-bold text-purple_">{`${education.course} · ${education.type}`}</h4>
           <p>
             <i>{formatLocation(education.location)}</i>
           </p>

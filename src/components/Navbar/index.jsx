@@ -1,15 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
-import ToggleTheme from "../ToggleTheme";
+import ToggleTheme from "./ToggleTheme";
 import { useContext, useEffect, useState } from "react";
 import { Context } from "../../Context";
-import nav_pt from "./nav_pt.json";
-import nav_en from "./nav_en.json";
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
+import nav_pt from "./nav_pt.json";
+import nav_en from "./nav_en.json";
 import {
-  AcademicCapIcon,
-  BriefcaseIcon,
   HomeIcon,
+  BriefcaseIcon,
+  AcademicCapIcon,
   WrenchScrewdriverIcon,
 } from "@heroicons/react/24/solid";
 
@@ -27,50 +27,42 @@ export default function Navbar() {
   return (
     <nav>
       <div className="hidden md:flex md:flex-row">
-        <div className="px-5 py-6">
-          <Link
-            to="/"
-            className={
-              location.pathname === "/" ? "nav-link-active" : "nav-link"
-            }
-          >
+        <div
+          className={`px-5 py-6 ${
+            location.pathname === "/" ? "nav-link-active" : "nav-link"
+          }`}
+        >
+          <Link to="/" className="flex">
             <HomeIcon className="nav-icon" />
             {content.home}
           </Link>
         </div>
-        <div className="px-5 py-6">
-          <Link
-            to="/experience"
-            className={
-              location.pathname === "/experience"
-                ? "nav-link-active"
-                : "nav-link"
-            }
-          >
+        <div
+          className={`px-5 py-6 ${
+            location.pathname === "/experience" ? "nav-link-active" : "nav-link"
+          }`}
+        >
+          <Link to="/experience" className="flex">
             <BriefcaseIcon className="nav-icon" />
             {content.experience}
           </Link>
         </div>
-        <div className="px-5 py-6">
-          <Link
-            to="/education"
-            className={
-              location.pathname === "/education"
-                ? "nav-link-active"
-                : "nav-link"
-            }
-          >
+        <div
+          className={`px-5 py-6 ${
+            location.pathname === "/education" ? "nav-link-active" : "nav-link"
+          }`}
+        >
+          <Link to="/education" className="flex">
             <AcademicCapIcon className="nav-icon" />
             {content.education}
           </Link>
         </div>
-        <div className="px-5 py-6">
-          <Link
-            to="/projects"
-            className={
-              location.pathname === "/projects" ? "nav-link-active" : "nav-link"
-            }
-          >
+        <div
+          className={`px-5 py-6 ${
+            location.pathname === "/projects" ? "nav-link-active" : "nav-link"
+          }`}
+        >
+          <Link to="/projects" className="flex">
             <WrenchScrewdriverIcon className="nav-icon" />
             {content.projects}
           </Link>

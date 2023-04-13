@@ -16,49 +16,43 @@ const MobileMenu = ({ location, content }) => {
       </div>
       <div className="hidden mobile-menu">
         <div className="flex flex-col md:hidden items-center">
-          <div className="px-5 py-2 ">
-            <Link
-              to="/"
-              className={
-                location.pathname === "/" ? "nav-link-active" : "nav-link"
-              }
-            >
+          <div
+            className={`px-5 py-6 ${
+              location.pathname === "/" ? "nav-link-active" : "nav-link"
+            }`}
+          >
+            <Link to="/" className="flex justify-center">
               {content.home}
             </Link>
           </div>
-          <div className="px-5 py-2">
-            <Link
-              to="/experience"
-              className={
-                location.pathname === "/experience"
-                  ? "nav-link-active"
-                  : "nav-link"
-              }
-            >
+          <div
+            className={`px-5 py-6 ${
+              location.pathname === "/experience"
+                ? "nav-link-active"
+                : "nav-link"
+            }`}
+          >
+            <Link to="/experience" className="flex justify-center">
               {content.experience}
             </Link>
           </div>
-          <div className="px-5 py-2">
-            <Link
-              to="/education"
-              className={
-                location.pathname === "/education"
-                  ? "nav-link-active"
-                  : "nav-link"
-              }
-            >
+          <div
+            className={`px-5 py-6 ${
+              location.pathname === "/education"
+                ? "nav-link-active"
+                : "nav-link"
+            }`}
+          >
+            <Link to="/education" className="flex justify-center">
               {content.education}
             </Link>
           </div>
-          <div className="px-5 py-2">
-            <Link
-              to="/projects"
-              className={
-                location.pathname === "/projects"
-                  ? "nav-link-active"
-                  : "nav-link"
-              }
-            >
+          <div
+            className={`px-5 py-6 ${
+              location.pathname === "/projects" ? "nav-link-active" : "nav-link"
+            }`}
+          >
+            <Link to="/projects" className="flex justify-center">
               {content.projects}
             </Link>
           </div>

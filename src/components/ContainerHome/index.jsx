@@ -14,13 +14,22 @@ const ContainerHome = () => {
   const defineContent = language === "pt-BR" ? about_pt : about_en;
   const [content, setContent] = useState(defineContent);
 
-  const icons = [
-    <IoLogoWhatsapp className="mr-2" />,
-    <SiGmail className="mr-2" />,
-    <FaLinkedin className="mr-2" />,
-    <FaGithub className="mr-2" />,
-    <RiInstagramFill className="mr-2" />,
-  ];
+  const contacts = {
+    icons: [
+      <IoLogoWhatsapp className="mr-2" />,
+      <SiGmail className="mr-2" />,
+      <FaLinkedin className="mr-2" />,
+      <FaGithub className="mr-2" />,
+      <RiInstagramFill className="mr-2" />,
+    ],
+    bgColors: [
+      "bg-contacts-whatsapp hover:bg-green-500",
+      "bg-contacts-gmail hover:bg-red-400",
+      "bg-contacts-linkedin hover:bg-blue-500",
+      "bg-contacts-github hover:bg-gray-700",
+      "bg-contacts-instagram hover:bg-pink-500",
+    ],
+  };
 
   useEffect(() => {
     setContent(defineContent);
@@ -38,7 +47,7 @@ const ContainerHome = () => {
             <h1 className="text-lg md:text-3xl font-bold">
               {content.title} &#129299;
             </h1>
-            <i className="text-sun">{content.office}</i>
+            <i className="text-purple_">{content.office}</i>
           </div>
           {content.paragraphs.map((paragraph, index) => (
             <p className="indent-8 text-justify" key={index}>
@@ -59,9 +68,9 @@ const ContainerHome = () => {
               key={index}
               href={contact.url}
               target="_blank"
-              className="contact"
+              className={`contact ${contacts.bgColors[index]}`}
             >
-              {icons[index]}
+              {contacts.icons[index]}
               {contact.name}
             </a>
           ))}

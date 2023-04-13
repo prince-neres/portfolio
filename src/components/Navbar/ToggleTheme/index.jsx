@@ -20,11 +20,11 @@ export default function ToggleTheme() {
   return (
     <div className="h-14 rounded-full">
       <MoonIcon
-        className="text-sun block dark:hidden cursor-pointer h-14 hover:text-yellow-400 duration-300"
+        className="text-sun_ block dark:hidden cursor-pointer h-14 hover:text-yellow-400 duration-300"
         onClick={toogle}
       />
       <SunIcon
-        className="text-sun hidden dark:block cursor-pointer h-14 hover:text-yellow-400 duration-300"
+        className="text-sun_ hidden dark:block cursor-pointer h-14 hover:text-yellow-400 duration-300"
         onClick={toogle}
       />
     </div>
