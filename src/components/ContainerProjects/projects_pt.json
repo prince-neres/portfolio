@@ -30,7 +30,7 @@
 				"https://raw.githubusercontent.com/prince-neres/drag-and-drop-game/master/static/imgs/previews/temas.png",
 				"https://github.com/prince-neres/drag-and-drop-game/raw/master/static/imgs/previews/jogo.png"
 			],
-			"url": "",
+			"url": "https://drag-and-drop.onrender.com/",
 			"repo": "https://github.com/prince-neres/drag-and-drop-game",
 			"tecnologies": [
 				"jQuery, Bootstrap, Flask, MongoDB"
