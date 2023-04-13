@@ -15,10 +15,10 @@
 		{
 			"name": "Aplicação de Notas",
 			"previews": [
-				"https://github.com/prince-neres/notes-app/raw/master/frontend/public/notes.png",
-				"https://github.com/prince-neres/notes-app/raw/master/frontend/public/login.png"
+				"https://github.com/prince-neres/notes-app-frontend/raw/master/public/notes.png",
+				"https://github.com/prince-neres/notes-app-frontend/raw/master/public/login.png"
 			],
-			"url": "",
+			"url": "https://notes-app-prince.netlify.app/",
 			"repo": "https://github.com/prince-neres/notes-app",
 			"tecnologies": [
 				"React, Redux, Axios, Router DOM, Flask, JWT, SQL Alchemy, PostgreSQL"
