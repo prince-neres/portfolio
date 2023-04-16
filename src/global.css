@@ -36,7 +36,7 @@
   }
 
   .tag {
-    @apply text-sm font-semibold p-2 rounded-full uppercase m-1 bg-purple_ text-white;
+    @apply text-xs sm:text-sm m-1 font-semibold p-2 rounded-full uppercase bg-purple_ text-white;
   }
 
   .project-link-button {

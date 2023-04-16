@@ -69,7 +69,7 @@ export default function Navbar() {
         </div>
       </div>
       <MobileMenu location={location} content={content} />
-      <div className="flex items-center pr-5 sm:p-5 md:p-0 md:pr-5">
+      <div className="flex flex-col sm:flex-row justify-center items-center pr-5 sm:p-5 md:p-0 md:pr-5">
         <LanguageSwitcher language={language} setLanguage={setLanguage} />
         <ToggleTheme />
       </div>

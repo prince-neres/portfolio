@@ -8,6 +8,7 @@ import about_pt from "./about_pt.json";
 import about_en from "./about_en.json";
 import Me from "../../assets/me.jpg";
 import CvButton from "./CvButton";
+import TypingAnimation from "./TypingAnimation";
 
 const ContainerHome = () => {
   const [language] = useContext(Context);
@@ -42,14 +43,12 @@ const ContainerHome = () => {
           src={Me}
           className="rounded-full mb-5 w-56 h-56 md:w-72 md:h-72 mx-auto lg:m-0"
         />
-        <div className="lg:pl-10	">
+        <div className="lg:pl-10">
           <div className="pb-5">
-            <h1 className="text-lg md:text-3xl font-bold">
-              {content.title} &#129299;
-            </h1>
+            <TypingAnimation text={content.title} />
             <i className="text-purple_">{content.office}</i>
           </div>
-          {content.paragraphs.map((paragraph, index) => (
+          {content?.paragraphs?.map((paragraph, index) => (
             <p className="indent-8 text-justify" key={index}>
               {paragraph}
             </p>
