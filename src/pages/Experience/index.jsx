@@ -1,7 +1,12 @@
 import ContainerExperience from "../../components/ContainerExperience";
+import AnimatedPage from "../AnimatedPage";
 
 const Experience = () => {
-  return <ContainerExperience />;
+  return (
+    <AnimatedPage>
+      <ContainerExperience />
+    </AnimatedPage>
+  );
 };
 
 export default Experience;

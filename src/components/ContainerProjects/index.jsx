@@ -20,7 +20,7 @@ const ContainerProjects = () => {
   }, [language]);
 
   return (
-    <div className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96 flex">
+    <div className="py-5 lg:py-0 px-5 md:px-10 xl:px-56 2xl:px-96 flex">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-5 md:px-10 lg:px-0">
         {content.projects.map((project, index) => (
           <div key={index} className="text-center">

@@ -3,6 +3,7 @@ import { Outlet } from "react-router";
 import { Context } from "../../Context";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import { AnimatePresence } from "framer-motion";
 
 const Base = () => {
   const [language, setLanguage] = useState(
@@ -10,10 +11,12 @@ const Base = () => {
   );
 
   return (
-    <div className="h-screen flex flex-col justify-between scrollbar-thin scrollbar-thumb-sun scrollbar-track-light-100 dark:scrollbar-track-dark-200 overflow-y-scroll scrollbar-thumb-rounded-full">
+    <div className="h-screen flex flex-col justify-between overflow-x-hidden scrollbar-thin scrollbar-thumb-blue_ dark:scrollbar-thumb-yellow_ overflow-y-scroll scrollbar-thumb-rounded-full">
       <Context.Provider value={[language, setLanguage]}>
         <Navbar />
-        <Outlet />
+        <AnimatePresence mode="wait">
+          <Outlet />
+        </AnimatePresence>
         <Footer />
       </Context.Provider>
     </div>
