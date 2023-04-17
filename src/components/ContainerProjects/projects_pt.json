@@ -51,8 +51,8 @@
 		{
 			"name": "Interface para Loja de Jogos",
 			"previews": [
-				"https://github.com/prince-neres/gaming-e-commerce-interface/raw/master/src/assets/previews/products.png",
-				"https://github.com/prince-neres/gaming-e-commerce-interface/raw/master/src/assets/previews/cart.png"
+				"https://github.com/prince-neres/gaming-e-commerce-interface/raw/master/src/assets/previews/products.jpg",
+				"https://github.com/prince-neres/gaming-e-commerce-interface/raw/master/src/assets/previews/cart.jpg"
 			],
 			"url": "https://gaming-ecommerce-interface.netlify.app/",
 			"repo": "https://github.com/prince-neres/gaming-e-commerce-interface",
