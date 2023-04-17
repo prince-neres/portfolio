@@ -39,8 +39,8 @@
 		{
 			"name": "Aplicação de Clima",
 			"previews": [
-				"https://github.com/prince-neres/weather-app/raw/master/public/previews/city-weather.png",
-				"https://github.com/prince-neres/weather-app/raw/master/public/previews/search-city-weather.png"
+				"https://github.com/prince-neres/weather-app/raw/master/public/previews/city-weather.jpg",
+				"https://github.com/prince-neres/weather-app/raw/master/public/previews/search-city-weather.jpg"
 			],
 			"url": "https://weather-app-prince-neres.netlify.app/",
 			"repo": "https://github.com/prince-neres/weather-app",
