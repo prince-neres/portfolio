@@ -11,9 +11,7 @@ function TypingAnimation({ text }) {
     }
   }, [text]);
 
-  return (
-    <h1 className="text-lg md:text-3xl font-bold">{currentText} &#129299;</h1>
-  );
+  return <h1 className="text-lg md:text-3xl font-bold">{currentText}</h1>;
 }
 
 export default TypingAnimation;
