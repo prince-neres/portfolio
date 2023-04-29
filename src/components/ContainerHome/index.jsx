@@ -1,12 +1,11 @@
 import { useState, useContext, useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import { RiInstagramFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { Context } from "../../Context";
 import about_pt from "./about_pt.json";
 import about_en from "./about_en.json";
-import Me from "../../assets/me.jpg";
+import Me from "../../assets/me.png";
 import CvButton from "./CvButton";
 import TypingAnimation from "./TypingAnimation";
 
@@ -21,14 +20,12 @@ const ContainerHome = () => {
       <SiGmail className="mr-2" />,
       <FaLinkedin className="mr-2" />,
       <FaGithub className="mr-2" />,
-      <RiInstagramFill className="mr-2" />,
     ],
     bgColors: [
       "bg-contacts-whatsapp hover:bg-green-500",
       "bg-contacts-gmail hover:bg-red-400",
       "bg-contacts-linkedin hover:bg-blue-500",
       "bg-contacts-github hover:bg-gray-700",
-      "bg-contacts-instagram hover:bg-pink-500",
     ],
   };
 
