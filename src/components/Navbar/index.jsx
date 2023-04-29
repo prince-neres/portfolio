@@ -7,7 +7,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import nav_pt from "./nav_pt.json";
 import nav_en from "./nav_en.json";
 import {
-  HomeIcon,
+  UserIcon,
   BriefcaseIcon,
   AcademicCapIcon,
   WrenchScrewdriverIcon,
@@ -33,8 +33,8 @@ export default function Navbar() {
           }`}
         >
           <Link to="/" className="flex">
-            <HomeIcon className="nav-icon" />
-            {content.home}
+            <UserIcon className="nav-icon" />
+            {content.about}
           </Link>
         </div>
         <div

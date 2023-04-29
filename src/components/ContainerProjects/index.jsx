@@ -28,7 +28,7 @@ const ContainerProjects = () => {
               {!imageLoaded && <Spin />}
               <img
                 src={project.previews[0]}
-                className={`pb-3 group-hover:hidden aspect-video ${
+                className={`pb-3 group-hover:hidden aspect-video rounded ${
                   imageLoaded ? "block" : "hidden"
                 }`}
                 onLoad={handleImageLoad}

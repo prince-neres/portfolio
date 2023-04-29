@@ -1,0 +1,27 @@
+{
+	"title": "Olá! Meu nome é Prince",
+	"office": "Desenvolvedor Web",
+	"paragraphs": ["Em 2022, iniciei minha carreira como desenvolvedor de sistemas, trabalhando com diversas linguagens e tecnologias, incluindo <b>JavaScript</b>, <b>Python</b>, <b>React.js</b>, <b>Django</b>, <b>Flask</b>, <b>Git</b>, <b>PostgreSQL</b> e <b>MongoDB</b>. Utilizei metodologias ágeis, como <b>SCRUM</b> e <b>KANBAN</b>, para gerenciar as demandas e garantir entregas mais eficientes. Durante esse período, desenvolvi e mantive sistemas, aprimorei minhas habilidades em programação e me dediquei a oferecer soluções de alta qualidade para atender às necessidades dos clientes."],
+	"contacts": [
+		{
+			"name": "(62) 98422-4960",
+			"title": "(62) 98422-4960",
+			"url": "https://wa.me/5562984224960"
+		},
+		{
+			"name": "prince84224960@gmail.com",
+			"title": "prince84224960@gmail.com",
+			"url": "mailto:prince84224960@gmail.com"
+		},
+		{
+			"name": "LinkedIn",
+			"title": "Prince Neres",
+			"url": "https://www.linkedin.com/in/prince-neres"
+		},
+		{
+			"name": "GitHub",
+			"title": "prince-neres",
+			"url": "https://github.com/prince-neres"
+		}
+	]
+}

@@ -22,7 +22,7 @@ const MobileMenu = ({ location, content }) => {
             }`}
           >
             <Link to="/" className="flex justify-center">
-              {content.home}
+              {content.about}
             </Link>
           </div>
           <div
