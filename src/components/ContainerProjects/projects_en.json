@@ -1,6 +1,18 @@
 {
 	"projects": [
 		{
+			"name": "WallBox",
+			"previews": [
+				"https://github.com/prince-neres/wallbox-web/raw/master/public/previews/wallpapers.jpg",
+				"https://github.com/prince-neres/wallbox-web/raw/master/public/previews/wallpaper-upload.jpg"
+			],
+			"url": "",
+			"repo": "https://github.com/prince-neres/wallbox-web",
+			"tecnologies": [
+				"React, Redux, Axios, Router DOM, Flask, S3, JWT, PostgreSQL"
+			]
+		},
+		{
 			"name": "Ecommerce",
 			"previews": [
 				"https://github.com/prince-neres/ecommerce/blob/master/frontend/public/previews/home.jpg?raw=",
