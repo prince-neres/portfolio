@@ -6,7 +6,7 @@ import { Context } from "../../Context";
 import about_pt from "./about_pt.json";
 import about_en from "./about_en.json";
 import Me from "../../assets/me.jpg";
-import CvButton from "./CvButton";
+import DownloadCVButton from "./DownloadCVButton";
 import TypingAnimation from "./TypingAnimation";
 
 const ContainerAbout = () => {
@@ -50,7 +50,7 @@ const ContainerAbout = () => {
             />
           ))}
           <div className="flex justify-center pt-5">
-            <CvButton
+            <DownloadCVButton
               title={language === "pt-BR" ? "Currículo" : "Curriculum"}
             />
           </div>
