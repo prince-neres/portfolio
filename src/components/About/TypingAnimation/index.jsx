@@ -21,7 +21,7 @@ function TypingAnimation({ text }) {
   }, [text]);
 
   return (
-    <div className="pt-5 text-xl md:text-3xl font-bold">
+    <div className="text-black dark:text-white text-xl md:text-2xl font-bold">
       {currentText}
       {showCursor && <span>|</span>}
     </div>

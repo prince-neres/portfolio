@@ -1,10 +1,11 @@
 import { useContext, useState, useEffect } from "react";
 import { formatDate, formatLocation, monthsDiff } from "../../commons/utils.js";
+import { motion } from "framer-motion";
 import { Context } from "../../Context.js";
 import xp_pt from "./xp_pt.json";
 import xp_en from "./xp_en.json";
 
-const ContainerExperience = () => {
+const Experience = () => {
   const [language] = useContext(Context);
   const defineContent = language === "pt-BR" ? xp_pt : xp_en;
   const [content, setContent] = useState(defineContent);
@@ -14,10 +15,15 @@ const ContainerExperience = () => {
   }, [language]);
 
   return (
-    <div className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96">
+    <motion.div
+      className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96"
+      variants={container}
+      initial="hidden"
+      animate="visible"
+    >
       {content.map((xp, index) => (
-        <div key={index} className="pb-8">
-          <h3 className="font-bold text-xl text-blue_ dark:text-yellow_">
+        <motion.div key={index} className="item pb-8" variants={item}>
+          <h3 className="font-bold text-xl text-black dark:text-purple_">
             {xp.office}
           </h3>
           <h4 className="font-bold">{`${xp.company} · ${xp.type}`}</h4>
@@ -39,10 +45,30 @@ const ContainerExperience = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
-export default ContainerExperience;
+export default Experience;
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};

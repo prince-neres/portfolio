@@ -19,18 +19,18 @@ export default function ToggleTheme() {
   };
 
   return (
-    <div className="h-14 rounded-full select-none">
+    <div className="h-12 rounded-full select-none">
       <motion.div
         className="container"
         whileHover={{ scale: 1.2, rotate: 360, transition: { duration: 1 } }}
         whileTap={{ scale: 0.8, rotate: -360, borderRadius: "100%" }}
       >
         <MoonIcon
-          className="text-sun_ block dark:hidden cursor-pointer h-14 hover:text-yellow-400 duration-300"
+          className="text-sun_ block dark:hidden cursor-pointer h-12 hover:text-yellow-400 duration-300"
           onClick={toogle}
         />
         <SunIcon
-          className="text-sun_ hidden dark:block cursor-pointer h-14 hover:text-yellow-400 duration-300"
+          className="text-sun_ hidden dark:block cursor-pointer h-12 hover:text-yellow-400 duration-300"
           onClick={toogle}
         />
       </motion.div>

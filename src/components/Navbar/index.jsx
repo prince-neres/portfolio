@@ -28,7 +28,7 @@ export default function Navbar() {
     <nav>
       <div className="hidden md:flex md:flex-row">
         <div
-          className={`px-5 py-6 ${
+          className={`p-3 mx-1 ${
             location.pathname === "/" ? "nav-link-active" : "nav-link"
           }`}
         >
@@ -38,7 +38,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div
-          className={`px-5 py-6 ${
+          className={`p-3 mx-1 ${
             location.pathname === "/experience" ? "nav-link-active" : "nav-link"
           }`}
         >
@@ -48,7 +48,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div
-          className={`px-5 py-6 ${
+          className={`p-3 mx-1 ${
             location.pathname === "/education" ? "nav-link-active" : "nav-link"
           }`}
         >
@@ -58,7 +58,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div
-          className={`px-5 py-6 ${
+          className={`p-3 mx-1 ${
             location.pathname === "/projects" ? "nav-link-active" : "nav-link"
           }`}
         >
@@ -69,8 +69,8 @@ export default function Navbar() {
         </div>
       </div>
       <MobileMenu location={location} content={content} />
-      <div className="flex flex-col sm:flex-row justify-center items-center pr-5 sm:p-5 md:p-0 md:pr-5">
-        <LanguageSwitcher language={language} setLanguage={setLanguage} />
+      <div className="flex flex-col md:flex-row gap-2 justify-center items-center mx-5">
+        <LanguageSwitcher setLanguage={setLanguage} language={language} />
         <ToggleTheme />
       </div>
     </nav>

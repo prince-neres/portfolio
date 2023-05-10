@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default ({ toggle, isOpen }) => (
   <div
     onClick={toggle}
-    className="w-5 h-5 mx-5 flex flex-col justify-between cursor-pointer select-none"
+    className="flex flex-col justify-between cursor w-8 cursor-pointer gap-1 select-none mx-5"
   >
     <motion.div
       className="bg-light-text dark:bg-dark-text rounded-md h-1 w-8"

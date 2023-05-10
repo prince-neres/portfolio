@@ -18,7 +18,7 @@ const MobileMenu = ({ location, content }) => {
 
   return (
     <>
-      <div className="block md:hidden items-center  text-center">
+      <div className="block md:hidden items-center text-center">
         <ToggleButton isOpen={isOpen} toggle={() => toggleOpen()} />
       </div>
       <div className="md:hidden">
@@ -31,44 +31,60 @@ const MobileMenu = ({ location, content }) => {
           >
             <div className="flex flex-col md:hidden items-center">
               <div
-                className={`px-5 py-6 ${
+                className={`p-3 w-full mb-1 ${
                   location.pathname === "/" ? "nav-link-active" : "nav-link"
                 }`}
               >
-                <Link to="/" className="flex justify-center">
+                <Link
+                  to="/"
+                  className="flex justify-center"
+                  onClick={() => toggleOpen()}
+                >
                   {content.about}
                 </Link>
               </div>
               <div
-                className={`px-5 py-6 ${
+                className={`p-3 w-full mb-1 ${
                   location.pathname === "/experience"
                     ? "nav-link-active"
                     : "nav-link"
                 }`}
               >
-                <Link to="/experience" className="flex justify-center">
+                <Link
+                  to="/experience"
+                  className="flex justify-center"
+                  onClick={() => toggleOpen()}
+                >
                   {content.experience}
                 </Link>
               </div>
               <div
-                className={`px-5 py-6 ${
+                className={`p-3 w-full mb-1 ${
                   location.pathname === "/education"
                     ? "nav-link-active"
                     : "nav-link"
                 }`}
               >
-                <Link to="/education" className="flex justify-center">
+                <Link
+                  to="/education"
+                  className="flex justify-center"
+                  onClick={() => toggleOpen()}
+                >
                   {content.education}
                 </Link>
               </div>
               <div
-                className={`px-5 py-6 ${
+                className={`p-3 w-full mb-1 ${
                   location.pathname === "/projects"
                     ? "nav-link-active"
                     : "nav-link"
                 }`}
               >
-                <Link to="/projects" className="flex justify-center">
+                <Link
+                  to="/projects"
+                  className="flex justify-center"
+                  onClick={() => toggleOpen()}
+                >
                   {content.projects}
                 </Link>
               </div>

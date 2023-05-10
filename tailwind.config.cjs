@@ -8,12 +8,12 @@ module.exports = {
         light: {
           text: "#1f2937",
           bg: "#f2f2f2",
-          bghover: "#ffffff",
+          bghover: "#e0e0e0",
         },
         dark: {
-          text: "#a6adbb",
-          bg: "#191d24",
-          bghover: "#2a303c	",
+          text: "#d8d4d4",
+          bg: "#000000",
+          bghover: "#1a1919",
         },
         contacts: {
           whatsapp: "#16a34a",
@@ -23,11 +23,7 @@ module.exports = {
           instagram: "#cd486b",
         },
         blue_: "#334155",
-        pink_: "#f000b8",
-        red_: "#d85251",
-        green_: "#1fd65f",
         purple_: "#661ae6",
-        yellow_: "#cbfd03",
         sun_: "#FDB813",
       },
       fontFamily: {

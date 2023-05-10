@@ -1,6 +1,6 @@
 const LanguageSwitcher = ({ language, setLanguage }) => {
   return (
-    <span className="bg-sun flex flex-col mb-3 sm:mb-0 sm:flex-row sm:mr-5 outline outline-2 outline-light-200 rounded">
+    <span className="bg-sun flex flex-col mb-3 sm:mb-0 sm:flex-row sm:mr-5 outline outline-2 outline-black dark:outline-white">
       <button
         onClick={() => setLanguage("pt-BR")}
         className={`px-2 ${

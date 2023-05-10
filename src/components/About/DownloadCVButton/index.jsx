@@ -1,8 +1,8 @@
-import cv from "./me-cv.pdf";
-import { motion } from "framer-motion";
-import { ArrowDownIcon } from "@heroicons/react/20/solid";
+import { LinkIcon } from "@heroicons/react/20/solid";
 
 const DownloadCVButton = ({ title }) => {
+  const cvUrl =
+    "https://wallboxbucket.s3.sa-east-1.amazonaws.com/portfolio/cv-prince-neres.pdf";
   const handleDownload = () => {
     const element = document.createElement("a");
     const file = new Blob(["Hello, world!"], { type: "text/plain" });
@@ -14,15 +14,15 @@ const DownloadCVButton = ({ title }) => {
   };
 
   return (
-    <motion.button
-      className="bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 pl-3 pr-4 rounded flex items-center justify-center duration-200"
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.9 }}
+    <a
+      className="bg-light-bghover dark:bg-dark-bghover p-3 rounded hover:text-purple_ flex items-center justify-center gap-2	duration-200 hover:scale-110"
       onClick={handleDownload}
+      href={cvUrl}
+      target="_blank"
     >
-      <ArrowDownIcon className="w-5" />
+      <LinkIcon className="w-5" />
       {title}
-    </motion.button>
+    </a>
   );
 };
 
