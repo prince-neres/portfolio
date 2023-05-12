@@ -5,7 +5,6 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { Context } from "../../Context";
 import about_pt from "./about_pt.json";
 import about_en from "./about_en.json";
-import Me from "../../assets/me.jpg";
 import DownloadCVButton from "./DownloadCVButton";
 import TypingAnimation from "./TypingAnimation";
 
@@ -36,7 +35,10 @@ const About = () => {
   return (
     <main className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96 flex flex-col justify-center items-center">
       <div className="flex flex-col gap-5 justify-center items-center">
-        <img src={Me} className="rounded-full h-36" />
+        <img
+          src="https://wallboxbucket.s3.sa-east-1.amazonaws.com/portfolio/me.jpg"
+          className="rounded-full h-36"
+        />
         <div className="h-full text-center">
           <div className="text-center">
             <TypingAnimation text={content.title} />
