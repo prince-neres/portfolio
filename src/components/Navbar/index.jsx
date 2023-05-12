@@ -21,6 +21,9 @@ export default function Navbar() {
 
   useEffect(() => {
     setContent(defineContent);
+    language === "pt-BR"
+      ? (document.title = "Prince Neres | Portfólio")
+      : (document.title = "Prince Neres | Portfolio");
     localStorage.setItem("language", language);
   }, [language]);
 
@@ -69,7 +72,7 @@ export default function Navbar() {
         </div>
       </div>
       <MobileMenu location={location} content={content} />
-      <div className="flex flex-col md:flex-row gap-2 justify-center items-center mx-5">
+      <div className="flex flex-col md:flex-row gap-2 justify-center text-center items-center mx-5">
         <LanguageSwitcher setLanguage={setLanguage} language={language} />
         <ToggleTheme />
       </div>

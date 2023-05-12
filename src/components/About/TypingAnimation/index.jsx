@@ -1,23 +1,42 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
-function TypingAnimation({ text }) {
+function TypingAnimation({ language }) {
   const [currentText, setCurrentText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
+  const text =
+    language === "en-US"
+      ? "Hello! My name is Prince"
+      : "Olá! Meu nome é Prince";
+
+  const typingEffectRef = useRef(null);
 
   useEffect(() => {
+    if (typingEffectRef.current) {
+      clearInterval(typingEffectRef.current);
+    }
+
     const intervalId = setInterval(() => {
       setShowCursor((current) => !current);
     }, 500);
 
-    return () => clearInterval(intervalId);
-  }, []);
+    return () => {
+      clearInterval(intervalId);
+      clearInterval(typingEffectRef.current);
+    };
+  }, [language]);
 
   useEffect(() => {
-    for (let i = 0; i < text.length; i++) {
-      setTimeout(() => {
-        setCurrentText(text.substring(0, i + 1));
-      }, 100 * i);
-    }
+    let i = 0;
+
+    typingEffectRef.current = setInterval(() => {
+      setCurrentText(text.substring(0, i + 1));
+      i++;
+      if (i >= text.length) {
+        clearInterval(typingEffectRef.current);
+      }
+    }, 100);
+
+    return () => clearInterval(typingEffectRef.current);
   }, [text]);
 
   return (

@@ -41,7 +41,7 @@ const About = () => {
         />
         <div className="h-full text-center">
           <div className="text-center">
-            <TypingAnimation text={content.title} />
+            <TypingAnimation language={language} />
           </div>
           <i className="text-purple_">{content.office}</i>
           <ul className="w-full flex flex-wrap justify-center">
