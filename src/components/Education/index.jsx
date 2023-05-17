@@ -21,7 +21,7 @@ const Education = () => {
           <h3 className="font-bold text-xl dark:text-white">
             {education.institute}
           </h3>
-          <h4 className="font-bold text-purple_">{`${education.course} · ${education.type}`}</h4>
+          <h4 className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple_ to-pink-600">{`${education.course} · ${education.type}`}</h4>
           <p>
             <i>{formatLocation(education.location)}</i>
           </p>

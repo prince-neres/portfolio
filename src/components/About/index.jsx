@@ -43,7 +43,9 @@ const About = () => {
           <div className="text-center">
             <TypingAnimation language={language} />
           </div>
-          <i className="text-purple_">{content.office}</i>
+          <i className="px-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple_ to-pink-600">
+            {content.office}
+          </i>
           <ul className="w-full flex flex-wrap justify-center">
             {content.contacts.map((contact, index) => (
               <a

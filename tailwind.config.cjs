@@ -12,7 +12,7 @@ module.exports = {
         },
         dark: {
           text: "#d8d4d4",
-          bg: "#000000",
+          bg: "#09090b",
           bghover: "#1a1919",
         },
         contacts: {
