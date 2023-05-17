@@ -3,7 +3,7 @@ const LanguageSwitcher = ({ language, setLanguage }) => {
     <span className="bg-sun rounded flex flex-col justify-center mb-3 sm:mb-0 sm:flex-row md:mr-5 outline outline-2 outline-black dark:outline-white">
       <button
         onClick={() => setLanguage("pt-BR")}
-        className={`px-2 drop-shadow-2xl ${
+        className={`px-2 rounded-l ${
           language == "pt-BR" ? "is-pt" : "is-en"
         } duration-300`}
       >
@@ -11,7 +11,7 @@ const LanguageSwitcher = ({ language, setLanguage }) => {
       </button>
       <button
         onClick={() => setLanguage("en-US")}
-        className={`px-2 ${
+        className={`px-2 rounded-r ${
           language == "pt-BR" ? "is-en" : "is-pt"
         } duration-300`}
       >

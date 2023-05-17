@@ -28,7 +28,7 @@
   }
 
   .is-pt {
-    @apply bg-white text-black rounded-l;
+    @apply bg-white text-black;
   }
 
   .is-en {
