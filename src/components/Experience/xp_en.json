@@ -1,5 +1,19 @@
 [
 	{
+		"office": "Liferay/Java Junior Developer",
+		"type": "Full-time",
+		"company": "Simplify Liferay",
+		"location": {
+			"city": "Brasilia",
+			"state": "DF",
+			"country": "Brazil"
+		},
+		"description": "Recent.",
+		"skills": ["Java", "Liferay"],
+		"start_date": "05/06/2023",
+		"end_date": ""
+	},
+	{
 		"office": "Full Stack Developer",
 		"type": "Full-time",
 		"company": "Autodoc",

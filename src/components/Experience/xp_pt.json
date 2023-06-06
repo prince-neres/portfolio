@@ -1,5 +1,19 @@
 [
 	{
+		"office": "Desenvolvedor Júnior Liferay/Java",
+		"type": "Tempo integral",
+		"company": "Simplify Liferay",
+		"location": {
+			"city": "Brasília",
+			"state": "DF",
+			"country": "Brazil"
+		},
+		"description": "Recente.",
+		"skills": ["Java", "Liferay"],
+		"start_date": "05/06/2023",
+		"end_date": ""
+	},
+	{
 		"office": "Desenvolvedor full stack",
 		"type": "Tempo integral",
 		"company": "Autodoc",
