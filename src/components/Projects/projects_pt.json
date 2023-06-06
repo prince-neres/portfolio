@@ -11,6 +11,17 @@
 			"tecnologies": [
 				"React, Redux, Axios, Router DOM, Flask, S3, JWT, PostgreSQL"
 			]
+		},{
+			"name": "To-Do List",
+			"previews": [
+				"https://github.com/prince-neres/desafio-junior-backend-simplify/raw/main/web/public/previews/tasks.jpg",
+				"https://github.com/prince-neres/desafio-junior-backend-simplify/raw/main/web/public/previews/login.jpg"
+			],
+			"url": "",
+			"repo": "https://github.com/prince-neres/wallbox-web",
+			"tecnologies": [
+				"React, Redux, Axios, Router DOM, Flask, JWT, PostgreSQL, Docker"
+			]
 		},
 		{
 			"name": "Ecommerce",
