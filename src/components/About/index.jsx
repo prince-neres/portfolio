@@ -7,6 +7,7 @@ import about_pt from "./about_pt.json";
 import about_en from "./about_en.json";
 import DownloadCVButton from "./DownloadCVButton";
 import TypingAnimation from "./TypingAnimation";
+import me_jpg from "../../assets/me.jpg";
 
 const About = () => {
   const [language] = useContext(Context);
@@ -35,10 +36,7 @@ const About = () => {
   return (
     <main className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96 flex flex-col justify-center items-center">
       <div className="flex flex-col gap-5 justify-center items-center">
-        <img
-          src="https://wallboxbucket.s3.sa-east-1.amazonaws.com/portfolio/me.jpg"
-          className="rounded-full h-36"
-        />
+        <img src={me_jpg} className="rounded-full h-36" />
         <div className="h-full text-center">
           <div className="text-center">
             <TypingAnimation language={language} />
