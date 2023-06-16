@@ -18,7 +18,7 @@
 				"https://github.com/prince-neres/desafio-junior-backend-simplify/raw/main/web/public/previews/login.jpg"
 			],
 			"url": "",
-			"repo": "https://github.com/prince-neres/wallbox-web",
+			"repo": "https://github.com/prince-neres/desafio-junior-backend-simplify.git",
 			"tecnologies": [
 				"React, Redux, Axios, Router DOM, Flask, JWT, PostgreSQL, Docker"
 			]

@@ -25,7 +25,7 @@ const About = () => {
       "hover:text-contacts-whatsapp",
       "hover:text-contacts-gmail",
       "hover:text-contacts-linkedin",
-      "hover:text-contacts-githun",
+      "hover:text-contacts-github",
     ],
   };
 
@@ -68,11 +68,11 @@ const About = () => {
             dangerouslySetInnerHTML={{ __html: paragraph }}
           />
         ))}
-        <div className="flex justify-center pt-5">
+        {/* <div className="flex justify-center pt-5">
           <DownloadCVButton
             title={language === "pt-BR" ? "Currículo" : "Curriculum"}
           />
-        </div>
+        </div> */}
       </div>
     </main>
   );
