@@ -9,11 +9,11 @@ const Footer = () => {
       <p>
         Copyright © 2023{" "}
         <a
-          href="https://prince-neres.space"
+          href="https://princeneres.netlify.app"
           target="_blank"
           className="hover:text-purple_ duration-200"
         >
-          prince-neres.space.{" "}
+          princeneres.netlify.app.{" "}
         </a>
         {language === "pt-BR"
           ? "Todos os direitos reservados."
