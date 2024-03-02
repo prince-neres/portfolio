@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
-function TypingAnimation({ language }) {
+function TypingAnimation() {
+	const { i18n, t } = useTranslation();
+	const language = i18n.language;
+	const typingtText = t("about.title");
   const [currentText, setCurrentText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
-  const text =
-    language === "en-US"
-      ? "Hello! My name is Prince"
-      : "Olá! Meu nome é Prince";
 
   const typingEffectRef = useRef(null);
 
@@ -29,15 +29,15 @@ function TypingAnimation({ language }) {
     let i = 0;
 
     typingEffectRef.current = setInterval(() => {
-      setCurrentText(text.substring(0, i + 1));
+      setCurrentText(typingtText.substring(0, i + 1));
       i++;
-      if (i >= text.length) {
+      if (i >= typingtText.length) {
         clearInterval(typingEffectRef.current);
       }
     }, 100);
 
     return () => clearInterval(typingEffectRef.current);
-  }, [text]);
+  }, [typingtText]);
 
   return (
     <div className="text-black dark:text-white text-xl md:text-2xl font-bold">

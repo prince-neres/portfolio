@@ -1,13 +1,12 @@
-import { useContext } from "react";
-import { Context } from "../../Context";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const [language, setLanguage] = useContext(Context);
+  const { t } = useTranslation();
 
   return (
     <footer className="w-full h-auto p-10 text-center items-end">
       <p>
-        Copyright © 2023{" "}
+        Copyright © 2024{" "}
         <a
           href="https://princeneres.netlify.app"
           target="_blank"
@@ -15,9 +14,7 @@ const Footer = () => {
         >
           princeneres.netlify.app.{" "}
         </a>
-        {language === "pt-BR"
-          ? "Todos os direitos reservados."
-          : "All rights reserved."}
+        {t("footer.copyright_text")}
       </p>
     </footer>
   );

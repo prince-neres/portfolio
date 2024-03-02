@@ -1,18 +1,14 @@
-import { useState, useContext, useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { Context } from "../../Context";
-import about_pt from "./about_pt.json";
-import about_en from "./about_en.json";
-import DownloadCVButton from "./DownloadCVButton";
 import TypingAnimation from "./TypingAnimation";
 import me_jpg from "../../assets/me.jpg";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
-  const [language] = useContext(Context);
-  const defineContent = language === "pt-BR" ? about_pt : about_en;
-  const [content, setContent] = useState(defineContent);
+  const { i18n, t } = useTranslation();
+	const language = i18n.language;
+	const aboutJson = i18n.store.data[language].translations.about;
 
   const contacts = {
     icons: [
@@ -29,23 +25,19 @@ const About = () => {
     ],
   };
 
-  useEffect(() => {
-    setContent(defineContent);
-  }, [language]);
-
   return (
     <main className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96 flex flex-col justify-center items-center">
       <div className="flex flex-col gap-5 justify-center items-center">
-        <img src={me_jpg} className="rounded-full h-36" />
+        <img src={me_jpg} className="rounded-full h-40" />
         <div className="h-full text-center">
           <div className="text-center">
-            <TypingAnimation language={language} />
+            <TypingAnimation />
           </div>
           <i className="px-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple_ to-pink-600">
-            {content.office}
+            {t("about.office")}
           </i>
           <ul className="w-full flex flex-wrap justify-center">
-            {content.contacts.map((contact, index) => (
+            {aboutJson.contacts.map((contact, index) => (
               <a
                 key={index}
                 href={contact.url}
@@ -61,18 +53,13 @@ const About = () => {
       </div>
 
       <div className="flex flex-col justify-center">
-        {content?.paragraphs?.map((paragraph, index) => (
+        {aboutJson.paragraphs.map((paragraph, index) => (
           <p
             className="indent-8 text-justify"
             key={index}
             dangerouslySetInnerHTML={{ __html: paragraph }}
           />
         ))}
-        {/* <div className="flex justify-center pt-5">
-          <DownloadCVButton
-            title={language === "pt-BR" ? "Currículo" : "Curriculum"}
-          />
-        </div> */}
       </div>
     </main>
   );

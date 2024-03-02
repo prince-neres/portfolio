@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import ToggleButton from "./ToggleButton";
 import { useCycle, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-const MobileMenu = ({ location, content }) => {
+const MobileMenu = ({ location }) => {
+	const { t } = useTranslation();
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   const variants = {
@@ -40,7 +42,7 @@ const MobileMenu = ({ location, content }) => {
                   className="flex justify-center"
                   onClick={() => toggleOpen()}
                 >
-                  {content.about}
+                  {t("navbar.about")}
                 </Link>
               </div>
               <div
@@ -55,7 +57,7 @@ const MobileMenu = ({ location, content }) => {
                   className="flex justify-center"
                   onClick={() => toggleOpen()}
                 >
-                  {content.experience}
+                  {t("navbar.experience")}
                 </Link>
               </div>
               <div
@@ -70,7 +72,7 @@ const MobileMenu = ({ location, content }) => {
                   className="flex justify-center"
                   onClick={() => toggleOpen()}
                 >
-                  {content.education}
+                  {t("navbar.education")}
                 </Link>
               </div>
               <div
@@ -85,7 +87,7 @@ const MobileMenu = ({ location, content }) => {
                   className="flex justify-center"
                   onClick={() => toggleOpen()}
                 >
-                  {content.projects}
+                  {t("navbar.projects")}
                 </Link>
               </div>
             </div>
