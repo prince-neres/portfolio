@@ -1,24 +1,18 @@
-import { useContext, useState, useEffect } from "react";
+import { useState } from "react";
 import Spin from "../Spin";
-import { Context } from "../../Context";
-import projects_en from "./projects_en.json";
-import projects_pt from "./projects_pt.json";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
-  const [language] = useContext(Context);
-  const defineContent = language === "pt-BR" ? projects_pt : projects_en;
-  const [content, setContent] = useState(defineContent);
+  const { i18n, t } = useTranslation();
+  const language = i18n.language;
+  const projectsJson = i18n.store.data[language].translations.projects;
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
-
-  useEffect(() => {
-    setContent(defineContent);
-  }, [language]);
 
   return (
     <div className="py-5 lg:py-0 px-5 md:px-10 xl:px-56 2xl:px-96 flex">
@@ -28,7 +22,7 @@ const Projects = () => {
         initial="hidden"
         animate="visible"
       >
-        {content.projects.map((project, index) => (
+        {projectsJson.projects.map((project, index) => (
           <motion.div key={index} className="item text-center" variants={item}>
             <div className="group">
               {!imageLoaded && <Spin />}
@@ -54,7 +48,7 @@ const Projects = () => {
                 className="project-link-button"
               >
                 <FaLink className=" mr-2" />
-                <i>{content.titles.link}</i>
+                <i>{t("projects.titles.link")}</i>
               </a>
             ) : null}
             {project.repo ? (
@@ -64,7 +58,7 @@ const Projects = () => {
                 className="project-link-button"
               >
                 <FaGithub className=" mr-2" />
-                <i>{content.titles.repo}</i>
+                <i>{t("projects.titles.repo")}</i>
               </a>
             ) : null}
           </motion.div>

@@ -1,19 +1,24 @@
-const LanguageSwitcher = ({ language, setLanguage }) => {
+import { useTranslation } from "react-i18next";
+
+const LanguageSwitcher = () => {
+	const { i18n} = useTranslation();
+	const selectedLanguage = i18n.language;
+
   return (
     <span className="bg-sun rounded flex flex-col justify-center mb-3 sm:mb-0 sm:flex-row md:mr-5 outline outline-2 outline-black dark:outline-white">
       <button
-        onClick={() => setLanguage("pt-BR")}
         className={`px-2 rounded-l ${
-          language == "pt-BR" ? "is-pt" : "is-en"
+          selectedLanguage === "pt-BR" ? "is-active" : ""
         } duration-300`}
+        onClick={() => i18n.changeLanguage("pt-BR")}
       >
         PT
       </button>
       <button
-        onClick={() => setLanguage("en-US")}
         className={`px-2 rounded-r ${
-          language == "pt-BR" ? "is-en" : "is-pt"
+          selectedLanguage === "en-US" ? "is-active" : ""
         } duration-300`}
+        onClick={() => i18n.changeLanguage("en-US")}
       >
         EN
       </button>

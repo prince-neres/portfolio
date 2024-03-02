@@ -1,22 +1,15 @@
 import { formatDate, formatLocation } from "../../commons/utils.js";
-import education_pt from "./education_pt.json";
-import education_en from "./education_en.json";
-import { useContext, useEffect, useState } from "react";
-import { Context } from "../../Context.js";
 import CertificatesButton from "./CertificatesButton/index.jsx";
+import { useTranslation } from "react-i18next";
 
 const Education = () => {
-  const [language] = useContext(Context);
-  const defineContent = language === "pt-BR" ? education_pt : education_en;
-  const [content, setContent] = useState(defineContent);
-
-  useEffect(() => {
-    setContent(defineContent);
-  }, [language]);
+  const { i18n, t } = useTranslation();
+  const language = i18n.language;
+  const educationJson = i18n.store.data[language].translations.education;
 
   return (
     <div className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96">
-      {content.academic.map((education, index) => (
+      {educationJson.academic.map((education, index) => (
         <div key={index} className="pb-4">
           <h3 className="font-bold text-xl dark:text-white">
             {education.institute}
@@ -34,8 +27,8 @@ const Education = () => {
       ))}
       <div className="text-center py-10">
         <CertificatesButton
-          url={content.certifications.url}
-          title={content.certifications.title}
+          title={t("education.certifications.title")}
+          url={t("education.certifications.url")}
         />
       </div>
     </div>

@@ -1,18 +1,11 @@
-import { useContext, useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { formatDate, formatLocation, monthsDiff } from "../../commons/utils.js";
 import { motion } from "framer-motion";
-import { Context } from "../../Context.js";
-import xp_pt from "./xp_pt.json";
-import xp_en from "./xp_en.json";
 
 const Experience = () => {
-  const [language] = useContext(Context);
-  const defineContent = language === "pt-BR" ? xp_pt : xp_en;
-  const [content, setContent] = useState(defineContent);
-
-  useEffect(() => {
-    setContent(defineContent);
-  }, [language]);
+  const { i18n } = useTranslation();
+  const language = i18n.language;
+  const experienceJson = i18n.store.data[language].translations.experience;
 
   return (
     <motion.div
@@ -21,7 +14,7 @@ const Experience = () => {
       initial="hidden"
       animate="visible"
     >
-      {content.map((xp, index) => (
+      {experienceJson.map((xp, index) => (
         <motion.div key={index} className="item pb-8" variants={item}>
           <h3 className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-purple_ to-pink-600">
             {xp.office}

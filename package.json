@@ -12,8 +12,11 @@
     "@heroicons/react": "^2.0.16",
     "express": "^4.18.2",
     "framer-motion": "^10.12.2",
+    "i18next": "^23.10.0",
+    "i18next-browser-languagedetector": "^7.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.5",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.8.2"
   },
