@@ -199,30 +199,30 @@ export default {
             "React, Redux, Axios, Router DOM, Flask, JWT, PostgreSQL, Docker",
           ],
         },
-        {
-          name: "Ecommerce",
-          previews: [
-            "https://github.com/prince-neres/ecommerce/blob/master/frontend/public/previews/home.jpg?raw=",
-            "https://github.com/prince-neres/ecommerce/blob/master/frontend/public/previews/cart.jpg?raw=",
-          ],
-          url: "",
-          repo: "https://github.com/prince-neres/ecommerce",
-          tecnologies: [
-            "React, Redux, Axios, Router DOM, Django, Django REST Framework, JWT, PostgreSQL",
-          ],
-        },
-        {
-          name: "Notes App",
-          previews: [
-            "https://github.com/prince-neres/notes-app-frontend/raw/master/public/notes.png",
-            "https://github.com/prince-neres/notes-app-frontend/raw/master/public/login.png",
-          ],
-          url: "https://notes-app-prince.netlify.app/",
-          repo: "https://github.com/prince-neres/notes-app",
-          tecnologies: [
-            "React, Redux, Axios, Router DOM, Flask, JWT, SQL Alchemy, PostgreSQL",
-          ],
-        },
+        // {
+        //   name: "Ecommerce",
+        //   previews: [
+        //     "https://github.com/prince-neres/ecommerce/blob/master/frontend/public/previews/home.jpg?raw=",
+        //     "https://github.com/prince-neres/ecommerce/blob/master/frontend/public/previews/cart.jpg?raw=",
+        //   ],
+        //   url: "",
+        //   repo: "https://github.com/prince-neres/ecommerce",
+        //   tecnologies: [
+        //     "React, Redux, Axios, Router DOM, Django, Django REST Framework, JWT, PostgreSQL",
+        //   ],
+        // },
+        // {
+        //   name: "Notes App",
+        //   previews: [
+        //     "https://github.com/prince-neres/notes-app-frontend/raw/master/public/notes.png",
+        //     "https://github.com/prince-neres/notes-app-frontend/raw/master/public/login.png",
+        //   ],
+        //   url: "https://notes-app-prince.netlify.app/",
+        //   repo: "https://github.com/prince-neres/notes-app",
+        //   tecnologies: [
+        //     "React, Redux, Axios, Router DOM, Flask, JWT, SQL Alchemy, PostgreSQL",
+        //   ],
+        // },
         {
           name: "Drag and Drop",
           previews: [
