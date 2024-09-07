@@ -10,7 +10,7 @@ const Footer = () => {
         <a
           href="https://princeneres.netlify.app"
           target="_blank"
-          className="hover:text-purple_ duration-200"
+          className="hover:text-primary_ duration-200"
         >
           princeneres.netlify.app.{" "}
         </a>

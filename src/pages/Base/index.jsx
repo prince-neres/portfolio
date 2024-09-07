@@ -9,7 +9,7 @@ const Base = () => {
   );
 
   return (
-    <div className="h-screen flex flex-col justify-between overflow-x-hidden scrollbar-thin scrollbar-thumb-blue_ dark:scrollbar-thumb-purple_ overflow-y-scroll scrollbar-thumb-rounded-full">
+    <div className="h-screen flex flex-col justify-between overflow-x-hidden scrollbar-thin scrollbar-thumb-blue_ dark:scrollbar-thumb-primary_ overflow-y-scroll scrollbar-thumb-rounded-full">
 			<Navbar />
 			<Outlet />
 			<Footer />

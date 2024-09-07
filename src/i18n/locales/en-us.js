@@ -10,7 +10,8 @@ export default {
             title: "Hello! My name is Prince",
             office: "Web Developer",
             paragraphs: [
-                "Since 2022, I have been building my career as a systems developer, working with a variety of programming languages and technologies, including <b>JavaScript</b>, <b>Python</b>, <b>React.js</b>, <b>Django</b>, <b>Flask</b>, <b>Git</b>, <b>PostgreSQL</b>, <b>MongoDB</b>, <b>Java</b>, and <b>Liferay</b>. I employ agile methodologies such as <b>SCRUM</b> and <b>KANBAN</b> to manage demands and ensure efficient deliveries. Throughout this time, I have been developing and maintaining systems, honing my programming skills, and dedicating myself to delivering high-quality solutions to meet clients' needs.",
+                "Throughout my career as a systems developer, which began in 2022, I have gained experience with a wide range of languages and technologies, including JavaScript, Python, React.js, Django, Flask, Git, PostgreSQL, MongoDB, Java, and Liferay. Specializing in the application of agile methodologies such as SCRUM and KANBAN, I am able to effectively manage demands, always focusing on delivering consistent, high-quality results. My work involves both system development and maintenance, with the continuous goal of improving my technical skills and providing solutions that meet clients' strategic needs.",
+                "Currently, I am working on portal development using Liferay, focusing on both national and international projects. I am certified as a Liferay Backend 7.4 Developer, which enables me to deliver robust and scalable solutions for various business demands. Additionally, I am constantly enhancing my technical competencies, applying agile methodologies to ensure the efficient execution of high-quality projects."
             ],
             contacts: [
                 {
@@ -24,12 +25,12 @@ export default {
                     url: "mailto:prince.neres@gmail.com",
                 },
                 {
-                    name: "LinkedIn",
+                    name: "Prince Neres",
                     title: "Prince Neres",
                     url: "https://www.linkedin.com/in/prince-neres",
                 },
                 {
-                    name: "GitHub",
+                    name: "prince-neres",
                     title: "prince-neres",
                     url: "https://github.com/prince-neres",
                 },

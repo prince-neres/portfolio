@@ -16,11 +16,11 @@
   }
 
   .nav-link {
-    @apply hover:bg-light-bghover hover:dark:text-purple_ dark:hover:bg-dark-bghover rounded duration-300;
+    @apply hover:bg-light-bghover hover:dark:text-primary_ dark:hover:bg-dark-bghover rounded duration-300;
   }
 
   .nav-link-active {
-    @apply bg-light-bghover dark:text-white dark:bg-dark-bghover  sm:w-auto rounded font-bold  w-full;
+    @apply bg-light-bghover dark:text-white dark:bg-dark-bghover  sm:w-auto rounded  w-full;
   }
 
   .nav-icon {
@@ -32,10 +32,10 @@
   }
 
   .tag {
-    @apply text-xs sm:text-sm m-1 font-semibold p-2 rounded-full uppercase bg-purple_ text-white;
+    @apply text-xs sm:text-sm m-1 font-semibold p-2 rounded-full uppercase bg-light-bghover dark:bg-dark-bghover text-light-text dark:text-white;
   }
 
   .project-link-button {
-    @apply bg-purple_ hover:bg-purple-500 text-white duration-200 flex justify-center items-center p-2 my-2 rounded;
+    @apply bg-primary_ hover:bg-purple-500 text-white duration-200 flex justify-center items-center p-2 my-2 rounded;
   }
 }

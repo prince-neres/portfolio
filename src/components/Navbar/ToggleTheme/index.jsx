@@ -26,7 +26,7 @@ export default function ToggleTheme() {
         whileTap={{ scale: 0.8, rotate: -360, borderRadius: "100%" }}
       >
         <MoonIcon
-          className="text-sun_ block dark:hidden cursor-pointer h-12 hover:text-yellow-400 duration-300"
+          className="text-moon_ block dark:hidden cursor-pointer h-12 hover:text-yellow-400 duration-300"
           onClick={toogle}
         />
         <SunIcon

@@ -21,19 +21,30 @@ const About = () => {
       "hover:text-contacts-whatsapp",
       "hover:text-contacts-gmail",
       "hover:text-contacts-linkedin",
-      "hover:text-contacts-github",
+      "dark:hover:text-contacts-github",
     ],
   };
 
   return (
     <main className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96 flex flex-col justify-center items-center">
       <div className="flex flex-col gap-5 justify-center items-center">
-        <img src={me_jpg} className="rounded-full h-40" />
+        <div className="h-40 relative">
+          <img
+            alt="me"
+            src={me_jpg}
+            className="rounded-full"
+          />
+          <img
+            src={me_jpg}
+            style={{ zIndex: -1 }}
+            className="rounded-full absolute bottom-0 left-0 w-full h-full transform scale-[.95] filter blur-[1.2rem]"
+          />
+        </div>
         <div className="h-full text-center">
           <div className="text-center">
             <TypingAnimation />
           </div>
-          <i className="px-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple_ to-pink-600">
+          <i className="px-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary_ to-pink-600">
             {t("about.office")}
           </i>
           <ul className="w-full flex flex-wrap justify-center">
@@ -55,7 +66,7 @@ const About = () => {
       <div className="flex flex-col justify-center">
         {aboutJson.paragraphs.map((paragraph, index) => (
           <p
-            className="indent-8 text-justify"
+            className="indent-8 text-justify mb-4"
             key={index}
             dangerouslySetInnerHTML={{ __html: paragraph }}
           />

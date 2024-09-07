@@ -7,24 +7,25 @@ module.exports = {
       colors: {
         light: {
           text: "#1f2937",
-          bg: "#f2f2f2",
-          bghover: "#e0e0e0",
+          bg: "#f8f9fa",
+          bghover: "#e9ecef",
         },
         dark: {
           text: "#d8d4d4",
-          bg: "#09090b",
-          bghover: "#1a1919",
+          bg: "#212529",
+          bghover: "#343a40",
         },
         contacts: {
           whatsapp: "#16a34a",
           gmail: "#ea4335",
           linkedin: "#0077b5",
-          github: "#24292e",
+          github: "#fafbfc",
           instagram: "#cd486b",
         },
         blue_: "#334155",
-        purple_: "#661ae6",
-        sun_: "#FDB813",
+        primary_: "#ff785a",
+        sun_: "#ffbc42",
+        moon_: "#8b8c89",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

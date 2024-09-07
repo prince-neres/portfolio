@@ -10,7 +10,8 @@ export default {
             title: "Olá! Meu nome é Prince",
             office: "Desenvolvedor Web",
             paragraphs: [
-                "Desde 2022, venho construindo minha carreira como desenvolvedor de sistemas, atuando com uma variedade de linguagens e tecnologias, incluindo <b>JavaScript</b>, <b>Python</b>, <b>React.js</b>, <b>Django</b>, <b>Flask</b>, <b>Git</b>, <b>PostgreSQL</b>, <b>MongoDB</b>, <b>Java</b> e <b>Liferay</b>. Utilizo metodologias ágeis, como <b>SCRUM</b> e <b>KANBAN</b>, para gerenciar as demandas e garantir entregas eficientes. Durante esse tempo, tenho desenvolvido e mantido sistemas, aprimorado minhas habilidades em programação e me dedicado a oferecer soluções de alta qualidade para atender às necessidades dos clientes.",
+                "Ao longo da minha carreira como desenvolvedor de sistemas, iniciada em 2022, tenho adquirido experiência em uma ampla gama de linguagens e tecnologias, incluindo JavaScript, Python, React.js, Django, Flask, Git, PostgreSQL, MongoDB, Java e Liferay. Especializado na aplicação de metodologias ágeis como SCRUM e KANBAN, sou capaz de gerenciar demandas de forma eficaz, sempre focando na entrega de resultados consistentes e de alta qualidade. Minha atuação abrange tanto o desenvolvimento quanto a manutenção de sistemas, com o objetivo contínuo de aprimorar minhas habilidades técnicas e oferecer soluções que atendam às necessidades estratégicas dos clientes.",
+                "Atualmente, trabalho no desenvolvimento de portais com Liferay, com foco em projetos nacionais e internacionais. Sou certificado como Liferay Backend 7.4 Developer, o que me capacita a entregar soluções robustas e escaláveis para diversas demandas empresariais. Paralelamente, sigo aprimorando minhas competências técnicas, aplicando as metodologias ágeis para garantir a execução eficiente de projetos de alta qualidade."
             ],
             contacts: [
                 {
@@ -24,12 +25,12 @@ export default {
                     url: "mailto:prince.neres@gmail.com",
                 },
                 {
-                    name: "LinkedIn",
+                    name: "Prince Neres",
                     title: "Prince Neres",
                     url: "https://www.linkedin.com/in/prince-neres",
                 },
                 {
-                    name: "GitHub",
+                    name: "prince-neres",
                     title: "prince-neres",
                     url: "https://github.com/prince-neres",
                 },

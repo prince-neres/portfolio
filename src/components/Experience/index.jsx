@@ -16,7 +16,7 @@ const Experience = () => {
     >
       {experienceJson.map((xp, index) => (
         <motion.div key={index} className="item pb-8" variants={item}>
-          <h3 className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-purple_ to-pink-600">
+          <h3 className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-primary_ to-pink-600">
             {xp.office}
           </h3>
           <h4 className="font-bold">{`${xp.company} · ${xp.type}`}</h4>

@@ -15,7 +15,7 @@ const DownloadCVButton = ({ title }) => {
 
   return (
     <a
-      className="bg-light-bghover dark:bg-dark-bghover p-3 rounded hover:text-purple_ flex items-center justify-center gap-2	duration-200 hover:scale-110"
+      className="bg-light-bghover dark:bg-dark-bghover p-3 rounded hover:text-primary_ flex items-center justify-center gap-2	duration-200 hover:scale-110"
       onClick={handleDownload}
       href={cvUrl}
       target="_blank"
