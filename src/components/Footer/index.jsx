@@ -8,7 +8,7 @@ const Footer = () => {
       <p>
         Copyright © 2024{" "}
         <a
-          href="https://princeneres.netlify.app"
+          href="https://princeneres.dev"
           target="_blank"
           className="hover:text-primary_ duration-200"
         >
