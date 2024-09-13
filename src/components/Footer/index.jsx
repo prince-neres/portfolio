@@ -12,7 +12,7 @@ const Footer = () => {
           target="_blank"
           className="hover:text-primary_ duration-200"
         >
-          princeneres.netlify.app.{" "}
+          princeneres.dev.{" "}
         </a>
         {t("footer.copyright_text")}
       </p>
