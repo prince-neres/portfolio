@@ -28,16 +28,16 @@ const About = () => {
   return (
     <main className="py-5 px-5 md:px-10 xl:px-56 2xl:px-96 flex flex-col justify-center items-center">
       <div className="flex flex-col gap-5 justify-center items-center">
-        <div className="h-40 relative">
+        <div className="relative">
           <img
             alt="me"
             src={me_jpg}
-            className="rounded-full"
+            className="rounded-full h-32"
           />
           <img
             src={me_jpg}
             style={{ zIndex: -1 }}
-            className="rounded-full absolute bottom-0 left-0 w-full h-full transform scale-[.95] filter blur-[1.2rem]"
+            className="rounded-full absolute bottom-0 left-0  h-32 transform scale-[.95] filter blur-[1.2rem]"
           />
         </div>
         <div className="h-full text-center">
