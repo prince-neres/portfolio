@@ -24,18 +24,12 @@ const Projects = () => {
       >
         {projectsJson.projects.map((project, index) => (
           <motion.div key={index} className="item text-center" variants={item}>
-            <div className="group">
+            <div className="hover:blur-[.2rem] cursor-pointer">
               {!imageLoaded && <Spin />}
               <img
                 src={project.previews[0]}
-                className={`mb-3 group-hover:hidden aspect-video rounded ${
-                  imageLoaded ? "block" : "hidden"
-                }`}
+                className={`mb-3 aspect-video rounded`}
                 onLoad={handleImageLoad}
-              />
-              <img
-                src={project.previews[1] || project.previews[0]}
-                className="mb-3 hidden aspect-video group-hover:block rounded"
               />
             </div>
             <h3 className="font-bold text-black dark:text-white">

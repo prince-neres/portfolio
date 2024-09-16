@@ -12,8 +12,8 @@ const Footer = () => {
           target="_blank"
           className="hover:text-primary_ duration-200"
         >
-          princeneres.dev.{" "}
-        </a>
+          princeneres.dev
+        </a>.{" "}
         {t("footer.copyright_text")}
       </p>
     </footer>
